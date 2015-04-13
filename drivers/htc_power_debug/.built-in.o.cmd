@@ -1,0 +1,1 @@
+cmd_drivers/htc_power_debug/built-in.o :=  /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o drivers/htc_power_debug/built-in.o drivers/htc_power_debug/htc_railways.o drivers/htc_power_debug/htc_railways_dbgfs.o 

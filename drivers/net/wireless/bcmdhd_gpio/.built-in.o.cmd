@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/bcmdhd_gpio/built-in.o :=  /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o drivers/net/wireless/bcmdhd_gpio/built-in.o drivers/net/wireless/bcmdhd_gpio/bcm_dev_reg.o drivers/net/wireless/bcmdhd_gpio/bcm_gpio.o 

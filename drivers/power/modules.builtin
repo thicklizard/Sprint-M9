@@ -1,0 +1,5 @@
+kernel/drivers/power/smb349-dual-charger.ko
+kernel/drivers/power/smb135x-charger.ko
+kernel/drivers/power/qpnp-fg-htc.ko
+kernel/drivers/power/qpnp-smbcharger-htc.ko
+kernel/drivers/power/battery_current_limit.ko

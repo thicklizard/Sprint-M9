@@ -1,0 +1,1 @@
+cmd_drivers/htc_debug/built-in.o :=  /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o drivers/htc_debug/built-in.o drivers/htc_debug/htc_sysinfo.o drivers/htc_debug/stability/built-in.o 

@@ -1,0 +1,1 @@
+cmd_drivers/i2c/chips/built-in.o :=  /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o drivers/i2c/chips/built-in.o drivers/i2c/chips/tfa9895.o drivers/i2c/chips/tfa9895l.o drivers/i2c/chips/rt5506.o drivers/i2c/chips/CwMcuSensor.o drivers/i2c/chips/pn544.o drivers/i2c/chips/pn544_htc.o 

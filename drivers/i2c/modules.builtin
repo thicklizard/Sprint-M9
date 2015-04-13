@@ -1,0 +1,9 @@
+kernel/drivers/i2c/i2c-core.ko
+kernel/drivers/i2c/i2c-dev.ko
+kernel/drivers/i2c/busses/i2c-msm-v2.ko
+kernel/drivers/i2c/chips/tfa9895.ko
+kernel/drivers/i2c/chips/tfa9895l.ko
+kernel/drivers/i2c/chips/rt5506.ko
+kernel/drivers/i2c/chips/CwMcuSensor.ko
+kernel/drivers/i2c/chips/pn544.ko
+kernel/drivers/i2c/chips/pn544_htc.ko

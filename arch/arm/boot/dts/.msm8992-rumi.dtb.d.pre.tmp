@@ -1,0 +1,17 @@
+msm8992-rumi.o: arch/arm64/boot/dts/qcom/msm8992-rumi.dts \
+ arch/arm64/boot/dts/qcom/msm8992.dtsi \
+ arch/arm64/boot/dts/qcom/skeleton64.dtsi \
+ /home/thicklizard/m9_kernel/arch/arm64/boot/dts/include/dt-bindings/clock/msm-clocks-8992.h \
+ arch/arm64/boot/dts/qcom/msm-gdsc.dtsi \
+ arch/arm64/boot/dts/qcom/msm8994-smp2p.dtsi \
+ arch/arm64/boot/dts/qcom/msm8992-mdss.dtsi \
+ arch/arm64/boot/dts/qcom/msm8992-gpu.dtsi \
+ arch/arm64/boot/dts/qcom/msm8992-ion.dtsi \
+ arch/arm64/boot/dts/qcom/msm-pm8994.dtsi \
+ arch/arm64/boot/dts/qcom/msm-pmi8994.dtsi \
+ arch/arm64/boot/dts/qcom/msm8992-regulator.dtsi \
+ arch/arm64/boot/dts/qcom/msm8992-iommu.dtsi \
+ arch/arm64/boot/dts/qcom/msm-iommu-v1.dtsi \
+ arch/arm64/boot/dts/qcom/msm8992-iommu-domains.dtsi \
+ arch/arm64/boot/dts/qcom/msm8992-smp2p.dtsi \
+ arch/arm64/boot/dts/qcom/msm8992-pinctrl.dtsi

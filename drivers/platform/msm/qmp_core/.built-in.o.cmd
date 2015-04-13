@@ -1,0 +1,1 @@
+cmd_drivers/platform/msm/qmp_core/built-in.o :=  /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o drivers/platform/msm/qmp_core/built-in.o drivers/platform/msm/qmp_core/qmp_core.o 

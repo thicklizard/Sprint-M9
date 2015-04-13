@@ -1,0 +1,1 @@
+cmd_sound/soc/msm/built-in.o :=  /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o sound/soc/msm/built-in.o sound/soc/msm/snd-soc-hostless-pcm.o sound/soc/msm/qdsp6v2/built-in.o sound/soc/msm/snd-soc-qdsp6v2.o sound/soc/msm/snd-soc-cpe.o sound/soc/msm/snd-soc-msm8994.o sound/soc/msm/htc_acoustic_alsa.o 

@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/built-in.o :=  /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o drivers/media/platform/built-in.o drivers/media/platform/davinci/built-in.o drivers/media/platform/msm/built-in.o drivers/media/platform/panasonic/built-in.o 

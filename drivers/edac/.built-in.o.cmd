@@ -1,0 +1,1 @@
+cmd_drivers/edac/built-in.o :=  /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o drivers/edac/built-in.o drivers/edac/edac_stub.o drivers/edac/edac_core.o drivers/edac/cortex_arm64_edac.o 

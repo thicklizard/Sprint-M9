@@ -1,0 +1,1 @@
+cmd_drivers/input/touchscreen/built-in.o :=  /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o drivers/input/touchscreen/built-in.o drivers/input/touchscreen/max1187x.o drivers/input/touchscreen/touch_fw_update.o drivers/input/touchscreen/synaptics_dsx_htc/built-in.o 

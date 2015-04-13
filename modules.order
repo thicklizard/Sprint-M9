@@ -1,0 +1,13 @@
+kernel/fs/ecryptfs/ecryptfs.ko
+kernel/crypto/ansi_cprng.ko
+kernel/drivers/spi/spidev.ko
+kernel/drivers/media/usb/gspca/gspca_main.ko
+kernel/drivers/input/misc/gpio_event.ko
+kernel/drivers/input/misc/gpio_matrix.ko
+kernel/drivers/input/misc/gpio_input.ko
+kernel/drivers/input/misc/gpio_output.ko
+kernel/drivers/input/misc/gpio_axis.ko
+kernel/drivers/input/evbug.ko
+kernel/drivers/platform/msm/msm_bus/msm-buspm-dev.ko
+kernel/drivers/gud/mcKernelApi.ko
+kernel/drivers/gud/mcDrvModule.ko

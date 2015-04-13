@@ -1,0 +1,1 @@
+cmd_drivers/thermal/thermal_sys.o := /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o drivers/thermal/thermal_sys.o drivers/thermal/thermal_core.o drivers/thermal/step_wise.o 

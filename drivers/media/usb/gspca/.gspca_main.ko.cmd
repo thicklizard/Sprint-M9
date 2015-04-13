@@ -1,0 +1,1 @@
+cmd_drivers/media/usb/gspca/gspca_main.ko := /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL -r  -T /home/thicklizard/m9_kernel/scripts/module-common.lds --build-id  -o drivers/media/usb/gspca/gspca_main.ko drivers/media/usb/gspca/gspca_main.o drivers/media/usb/gspca/gspca_main.mod.o

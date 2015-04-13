@@ -1,0 +1,1 @@
+cmd_drivers/misc/headset/built-in.o :=  /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/headset/built-in.o drivers/misc/headset/htc_headset_mgr.o drivers/misc/headset/htc_headset_pmic.o 

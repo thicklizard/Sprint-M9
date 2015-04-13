@@ -1,0 +1,1 @@
+cmd_fs/ecryptfs/ecryptfs.ko := /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL -r  -T /home/thicklizard/m9_kernel/scripts/module-common.lds --build-id  -o fs/ecryptfs/ecryptfs.ko fs/ecryptfs/ecryptfs.o fs/ecryptfs/ecryptfs.mod.o
