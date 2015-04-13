@@ -16,14 +16,14 @@
 // -isystem /home/thicklizard/aarch64-linux-android-4.9/bin/../lib/gcc/aarch64-linux-android/4.9.x-google/include
 // -include /home/thicklizard/m9_kernel/include/linux/kconfig.h
 // -MD kernel/.bounds.s.d kernel/bounds.c -mbionic -fpic -mlittle-endian
-// -mgeneral-regs-only -mabi=lp64 -auxbase-strip kernel/bounds.s -g -Os
+// -mgeneral-regs-only -mabi=lp64 -auxbase-strip kernel/bounds.s -g -O2
 // -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs
 // -Werror=implicit-function-declaration -Wno-format-security
-// -Wno-maybe-uninitialized -Wframe-larger-than=2048
-// -Wno-unused-but-set-variable -Wdeclaration-after-statement
-// -Wno-pointer-sign -fno-strict-aliasing -fno-common
-// -fno-delete-null-pointer-checks -fno-stack-protector
-// -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-strict-overflow
+// -Wframe-larger-than=2048 -Wno-unused-but-set-variable
+// -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-aliasing
+// -fno-common -fno-delete-null-pointer-checks -fno-stack-protector
+// -fno-omit-frame-pointer -fno-optimize-sibling-calls
+// -femit-struct-debug-baseonly -fno-var-tracking -fno-strict-overflow
 // -fconserve-stack -fverbose-asm
 // options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
 // -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments
@@ -33,35 +33,35 @@
 // -fexpensive-optimizations -fforward-propagate -ffunction-cse -fgcse
 // -fgcse-lm -fgnu-runtime -fgnu-unique -fguess-branch-probability
 // -fhoist-adjacent-loads -fident -fif-conversion -fif-conversion2
-// -findirect-inlining -finline -finline-atomics -finline-functions
+// -findirect-inlining -finline -finline-atomics
 // -finline-functions-called-once -finline-small-functions -fipa-cp
 // -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
 // -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
 // -fisolate-erroneous-paths-dereference -fivopts -fkeep-static-consts
 // -fleading-underscore -fmath-errno -fmerge-constants
 // -fmerge-debug-strings -fmove-loop-invariants -fomit-frame-pointer
-// -fpartial-inlining -fpeel-codesize-limit -fpeephole -fpeephole2 -fpic
-// -fprefetch-loop-arrays -free -freg-struct-return -freorder-blocks
-// -freorder-functions -frerun-cse-after-loop
+// -foptimize-strlen -fpartial-inlining -fpeel-codesize-limit -fpeephole
+// -fpeephole2 -fpic -fprefetch-loop-arrays -free -freg-struct-return
+// -freorder-blocks -freorder-functions -frerun-cse-after-loop
 // -fsched-critical-path-heuristic -fsched-dep-count-heuristic
 // -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
 // -fsched-rank-heuristic -fsched-spec -fsched-spec-insn-heuristic
-// -fsched-stalled-insns-dep -fschedule-insns2 -fsection-anchors
-// -fshow-column -fshrink-wrap -fsigned-zeros -fsplit-ivs-in-unroller
-// -fsplit-wide-types -fstrict-enum-precision -fstrict-volatile-bitfields
-// -fsync-libcalls -fthread-jumps -ftoplevel-reorder -ftrapping-math
-// -ftree-bit-ccp -ftree-builtin-call-dce -ftree-ccp -ftree-ch
-// -ftree-coalesce-vars -ftree-copy-prop -ftree-copyrename -ftree-cselim
-// -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-fre
+// -fsched-stalled-insns-dep -fschedule-insns -fschedule-insns2
+// -fsection-anchors -fshow-column -fshrink-wrap -fsigned-zeros
+// -fsplit-ivs-in-unroller -fsplit-wide-types -fstrict-enum-precision
+// -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+// -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp
+// -ftree-builtin-call-dce -ftree-ccp -ftree-ch -ftree-coalesce-vars
+// -ftree-copy-prop -ftree-copyrename -ftree-cselim -ftree-dce
+// -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-fre
 // -ftree-loop-if-convert -ftree-loop-im -ftree-loop-ivcanon
 // -ftree-loop-optimize -ftree-loop-vectorize -ftree-parallelize-loops=
 // -ftree-phiprop -ftree-pre -ftree-pta -ftree-reassoc -ftree-scev-cprop
 // -ftree-sink -ftree-slsr -ftree-sra -ftree-switch-conversion
 // -ftree-tail-merge -ftree-ter -ftree-vrp -funit-at-a-time
-// -funroll-codesize-limit -fvar-tracking -fvar-tracking-assignments
-// -fverbose-asm -fzero-initialized-in-bss -mandroid -mbionic
-// -mfix-cortex-a53-835769 -mgeneral-regs-only -mlittle-endian -mlra
-// -momit-leaf-frame-pointer
+// -funroll-codesize-limit -fverbose-asm -fzero-initialized-in-bss
+// -mandroid -mbionic -mfix-cortex-a53-835769 -mgeneral-regs-only
+// -mlittle-endian -mlra -momit-leaf-frame-pointer
 
 	.text
 .Ltext0:
@@ -104,15 +104,15 @@ foo:
 	.file 6 "include/linux/page_cgroup.h"
 	.section	.debug_info,"",%progbits
 .Ldebug_info0:
-	.4byte	0x1d2
+	.4byte	0x1cb
 	.2byte	0x4
 	.4byte	.Ldebug_abbrev0
 	.byte	0x8
 	.uleb128 0x1
-	.4byte	.LASF53
+	.4byte	.LASF52
 	.byte	0x1
+	.4byte	.LASF53
 	.4byte	.LASF54
-	.4byte	.LASF55
 	.8byte	.Ltext0
 	.8byte	.Letext0-.Ltext0
 	.4byte	.Ldebug_line0
@@ -150,7 +150,7 @@ foo:
 	.4byte	.LASF6
 	.uleb128 0x2
 	.byte	0x8
-	.byte	0x7
+	.byte	0x5
 	.4byte	.LASF7
 	.uleb128 0x2
 	.byte	0x8
@@ -161,142 +161,138 @@ foo:
 	.byte	0x8
 	.4byte	.LASF9
 	.uleb128 0x2
-	.byte	0x8
-	.byte	0x5
-	.4byte	.LASF10
-	.uleb128 0x2
 	.byte	0x1
 	.byte	0x2
-	.4byte	.LASF11
+	.4byte	.LASF10
 	.uleb128 0x4
-	.4byte	.LASF41
+	.4byte	.LASF40
 	.byte	0x4
 	.byte	0x2
 	.byte	0x4a
-	.4byte	0x143
+	.4byte	0x13c
 	.uleb128 0x5
-	.4byte	.LASF12
+	.4byte	.LASF11
 	.sleb128 0
 	.uleb128 0x5
-	.4byte	.LASF13
+	.4byte	.LASF12
 	.sleb128 1
 	.uleb128 0x5
-	.4byte	.LASF14
+	.4byte	.LASF13
 	.sleb128 2
 	.uleb128 0x5
-	.4byte	.LASF15
+	.4byte	.LASF14
 	.sleb128 3
 	.uleb128 0x5
-	.4byte	.LASF16
+	.4byte	.LASF15
 	.sleb128 4
 	.uleb128 0x5
-	.4byte	.LASF17
+	.4byte	.LASF16
 	.sleb128 5
 	.uleb128 0x5
-	.4byte	.LASF18
+	.4byte	.LASF17
 	.sleb128 6
 	.uleb128 0x5
-	.4byte	.LASF19
+	.4byte	.LASF18
 	.sleb128 7
 	.uleb128 0x5
-	.4byte	.LASF20
+	.4byte	.LASF19
 	.sleb128 8
 	.uleb128 0x5
-	.4byte	.LASF21
+	.4byte	.LASF20
 	.sleb128 9
 	.uleb128 0x5
-	.4byte	.LASF22
+	.4byte	.LASF21
 	.sleb128 10
 	.uleb128 0x5
-	.4byte	.LASF23
+	.4byte	.LASF22
 	.sleb128 11
 	.uleb128 0x5
-	.4byte	.LASF24
+	.4byte	.LASF23
 	.sleb128 12
 	.uleb128 0x5
-	.4byte	.LASF25
+	.4byte	.LASF24
 	.sleb128 13
 	.uleb128 0x5
-	.4byte	.LASF26
+	.4byte	.LASF25
 	.sleb128 14
 	.uleb128 0x5
-	.4byte	.LASF27
+	.4byte	.LASF26
 	.sleb128 15
 	.uleb128 0x5
-	.4byte	.LASF28
+	.4byte	.LASF27
 	.sleb128 16
 	.uleb128 0x5
-	.4byte	.LASF29
+	.4byte	.LASF28
 	.sleb128 17
 	.uleb128 0x5
-	.4byte	.LASF30
+	.4byte	.LASF29
 	.sleb128 18
 	.uleb128 0x5
-	.4byte	.LASF31
+	.4byte	.LASF30
 	.sleb128 19
 	.uleb128 0x5
-	.4byte	.LASF32
+	.4byte	.LASF31
 	.sleb128 20
 	.uleb128 0x5
-	.4byte	.LASF33
+	.4byte	.LASF32
 	.sleb128 21
 	.uleb128 0x5
-	.4byte	.LASF34
+	.4byte	.LASF33
 	.sleb128 22
 	.uleb128 0x5
-	.4byte	.LASF35
+	.4byte	.LASF34
 	.sleb128 23
 	.uleb128 0x5
-	.4byte	.LASF36
+	.4byte	.LASF35
 	.sleb128 8
 	.uleb128 0x5
-	.4byte	.LASF37
+	.4byte	.LASF36
 	.sleb128 12
 	.uleb128 0x5
-	.4byte	.LASF38
+	.4byte	.LASF37
 	.sleb128 8
 	.uleb128 0x5
-	.4byte	.LASF39
+	.4byte	.LASF38
 	.sleb128 4
 	.uleb128 0x5
-	.4byte	.LASF40
+	.4byte	.LASF39
 	.sleb128 11
 	.byte	0
 	.uleb128 0x6
-	.4byte	.LASF42
+	.4byte	.LASF41
 	.byte	0x4
 	.byte	0x3
 	.2byte	0x10e
-	.4byte	0x169
+	.4byte	0x162
 	.uleb128 0x5
-	.4byte	.LASF43
+	.4byte	.LASF42
 	.sleb128 0
 	.uleb128 0x5
-	.4byte	.LASF44
+	.4byte	.LASF43
 	.sleb128 1
 	.uleb128 0x5
-	.4byte	.LASF45
+	.4byte	.LASF44
 	.sleb128 2
 	.uleb128 0x5
-	.4byte	.LASF46
+	.4byte	.LASF45
 	.sleb128 3
 	.byte	0
 	.uleb128 0x7
 	.byte	0x4
 	.byte	0x6
 	.byte	0x4
-	.4byte	0x18a
+	.4byte	0x183
 	.uleb128 0x5
-	.4byte	.LASF47
+	.4byte	.LASF46
 	.sleb128 0
 	.uleb128 0x5
-	.4byte	.LASF48
+	.4byte	.LASF47
 	.sleb128 1
 	.uleb128 0x5
-	.4byte	.LASF49
+	.4byte	.LASF48
 	.sleb128 2
 	.uleb128 0x5
-	.4byte	.LASF50
+	.4byte	.LASF49
 	.sleb128 3
 	.byte	0
 	.uleb128 0x8
@@ -309,26 +305,26 @@ foo:
 	.byte	0x9c
 	.uleb128 0x9
 	.4byte	0x49
-	.4byte	0x1ae
+	.4byte	0x1a7
 	.uleb128 0xa
 	.byte	0
 	.uleb128 0xb
-	.4byte	.LASF51
+	.4byte	.LASF50
 	.byte	0x4
 	.byte	0x24
-	.4byte	0x1a3
+	.4byte	0x19c
 	.uleb128 0x9
 	.4byte	0x73
-	.4byte	0x1c4
+	.4byte	0x1bd
 	.uleb128 0xa
 	.byte	0
 	.uleb128 0xc
-	.4byte	.LASF52
+	.4byte	.LASF51
 	.byte	0x5
 	.2byte	0x1af
-	.4byte	0x1d0
+	.4byte	0x1c9
 	.uleb128 0xd
-	.4byte	0x1b9
+	.4byte	0x1b2
 	.byte	0
 	.section	.debug_abbrev,"",%progbits
 .Ldebug_abbrev0:
@@ -519,118 +515,117 @@ foo:
 	.section	.debug_line,"",%progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",%progbits,1
-.LASF49:
+.LASF48:
 	.string	"PCG_MIGRATION"
-.LASF26:
-	.string	"PG_head"
-.LASF51:
-	.string	"console_printk"
-.LASF22:
-	.string	"PG_reserved"
-.LASF44:
-	.string	"ZONE_NORMAL"
-.LASF29:
-	.string	"PG_mappedtodisk"
-.LASF40:
-	.string	"PG_slob_free"
-.LASF12:
-	.string	"PG_locked"
-.LASF16:
-	.string	"PG_dirty"
-.LASF53:
-	.ascii	"GNU C 4.9.x-google 20140827 ("
-	.string	"prerelease) -mbionic -fpic -mlittle-endian -mgeneral-regs-only -mabi=lp64 -g -Os -fno-strict-aliasing -fno-common -fno-delete-null-pointer-checks -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-strict-overflow -fconserve-stack"
 .LASF25:
-	.string	"PG_writeback"
-.LASF23:
-	.string	"PG_private"
-.LASF35:
-	.string	"__NR_PAGEFLAGS"
-.LASF46:
-	.string	"__MAX_NR_ZONES"
-.LASF37:
-	.string	"PG_fscache"
-.LASF14:
-	.string	"PG_referenced"
+	.string	"PG_head"
+.LASF50:
+	.string	"console_printk"
+.LASF21:
+	.string	"PG_reserved"
+.LASF43:
+	.string	"ZONE_NORMAL"
 .LASF28:
+	.string	"PG_mappedtodisk"
+.LASF39:
+	.string	"PG_slob_free"
+.LASF11:
+	.string	"PG_locked"
+.LASF15:
+	.string	"PG_dirty"
+.LASF24:
+	.string	"PG_writeback"
+.LASF22:
+	.string	"PG_private"
+.LASF34:
+	.string	"__NR_PAGEFLAGS"
+.LASF45:
+	.string	"__MAX_NR_ZONES"
+.LASF36:
+	.string	"PG_fscache"
+.LASF13:
+	.string	"PG_referenced"
+.LASF27:
 	.string	"PG_swapcache"
-.LASF42:
+.LASF41:
 	.string	"zone_type"
-.LASF7:
+.LASF8:
 	.string	"long unsigned int"
-.LASF55:
+.LASF54:
 	.string	"/home/thicklizard/m9_kernel"
 .LASF3:
 	.string	"short unsigned int"
-.LASF31:
+.LASF30:
 	.string	"PG_swapbacked"
-.LASF36:
+.LASF35:
 	.string	"PG_checked"
 .LASF1:
 	.string	"unsigned char"
-.LASF54:
+.LASF53:
 	.string	"kernel/bounds.c"
-.LASF27:
+.LASF26:
 	.string	"PG_tail"
-.LASF34:
+.LASF33:
 	.string	"PG_readahead"
-.LASF41:
+.LASF40:
 	.string	"pageflags"
-.LASF47:
+.LASF46:
 	.string	"PCG_LOCK"
 .LASF4:
 	.string	"unsigned int"
-.LASF13:
+.LASF12:
 	.string	"PG_error"
 .LASF6:
 	.string	"long long unsigned int"
-.LASF38:
+.LASF37:
 	.string	"PG_pinned"
-.LASF19:
-	.string	"PG_slab"
-.LASF20:
-	.string	"PG_owner_priv_1"
 .LASF18:
+	.string	"PG_slab"
+.LASF19:
+	.string	"PG_owner_priv_1"
+.LASF17:
 	.string	"PG_active"
-.LASF8:
-	.string	"sizetype"
-.LASF24:
+.LASF23:
 	.string	"PG_private_2"
 .LASF5:
 	.string	"long long int"
-.LASF17:
+.LASF16:
 	.string	"PG_lru"
 .LASF9:
 	.string	"char"
-.LASF32:
+.LASF31:
 	.string	"PG_unevictable"
-.LASF39:
+.LASF38:
 	.string	"PG_savepinned"
 .LASF2:
 	.string	"short int"
-.LASF52:
+.LASF51:
 	.string	"hex_asc"
-.LASF48:
+.LASF47:
 	.string	"PCG_USED"
-.LASF21:
+.LASF20:
 	.string	"PG_arch_1"
-.LASF10:
+.LASF52:
+	.ascii	"GNU C 4.9.x-google 20140827 (prerelease) -mbionic -fpic -mli"
+	.ascii	"ttle-endian -mge"
+	.string	"neral-regs-only -mabi=lp64 -g -O2 -fno-strict-aliasing -fno-common -fno-delete-null-pointer-checks -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -femit-struct-debug-baseonly -fno-var-tracking -fno-strict-overflow -fconserve-stack"
+.LASF7:
 	.string	"long int"
-.LASF45:
+.LASF44:
 	.string	"ZONE_MOVABLE"
-.LASF15:
+.LASF14:
 	.string	"PG_uptodate"
-.LASF50:
+.LASF49:
 	.string	"__NR_PCG_FLAGS"
 .LASF0:
 	.string	"signed char"
-.LASF30:
+.LASF29:
 	.string	"PG_reclaim"
-.LASF11:
+.LASF10:
 	.string	"_Bool"
-.LASF33:
+.LASF32:
 	.string	"PG_mlocked"
-.LASF43:
+.LASF42:
 	.string	"ZONE_DMA"
 	.ident	"GCC: (GNU) 4.9.x-google 20140827 (prerelease)"
 	.section	.note.GNU-stack,"",%progbits

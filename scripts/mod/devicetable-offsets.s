@@ -18,13 +18,14 @@
 // -MD scripts/mod/.devicetable-offsets.s.d
 // scripts/mod/devicetable-offsets.c -mbionic -fpic -mlittle-endian
 // -mgeneral-regs-only -mabi=lp64
-// -auxbase-strip scripts/mod/devicetable-offsets.s -g -Os -Wall -Wundef
+// -auxbase-strip scripts/mod/devicetable-offsets.s -g -O2 -Wall -Wundef
 // -Wstrict-prototypes -Wno-trigraphs -Werror=implicit-function-declaration
-// -Wno-format-security -Wno-maybe-uninitialized -Wframe-larger-than=2048
+// -Wno-format-security -Wframe-larger-than=2048
 // -Wno-unused-but-set-variable -Wdeclaration-after-statement
 // -Wno-pointer-sign -fno-strict-aliasing -fno-common
 // -fno-delete-null-pointer-checks -fno-stack-protector
-// -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-strict-overflow
+// -fno-omit-frame-pointer -fno-optimize-sibling-calls
+// -femit-struct-debug-baseonly -fno-var-tracking -fno-strict-overflow
 // -fconserve-stack -fverbose-asm
 // options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
 // -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments
@@ -34,35 +35,35 @@
 // -fexpensive-optimizations -fforward-propagate -ffunction-cse -fgcse
 // -fgcse-lm -fgnu-runtime -fgnu-unique -fguess-branch-probability
 // -fhoist-adjacent-loads -fident -fif-conversion -fif-conversion2
-// -findirect-inlining -finline -finline-atomics -finline-functions
+// -findirect-inlining -finline -finline-atomics
 // -finline-functions-called-once -finline-small-functions -fipa-cp
 // -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
 // -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
 // -fisolate-erroneous-paths-dereference -fivopts -fkeep-static-consts
 // -fleading-underscore -fmath-errno -fmerge-constants
 // -fmerge-debug-strings -fmove-loop-invariants -fomit-frame-pointer
-// -fpartial-inlining -fpeel-codesize-limit -fpeephole -fpeephole2 -fpic
-// -fprefetch-loop-arrays -free -freg-struct-return -freorder-blocks
-// -freorder-functions -frerun-cse-after-loop
+// -foptimize-strlen -fpartial-inlining -fpeel-codesize-limit -fpeephole
+// -fpeephole2 -fpic -fprefetch-loop-arrays -free -freg-struct-return
+// -freorder-blocks -freorder-functions -frerun-cse-after-loop
 // -fsched-critical-path-heuristic -fsched-dep-count-heuristic
 // -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
 // -fsched-rank-heuristic -fsched-spec -fsched-spec-insn-heuristic
-// -fsched-stalled-insns-dep -fschedule-insns2 -fsection-anchors
-// -fshow-column -fshrink-wrap -fsigned-zeros -fsplit-ivs-in-unroller
-// -fsplit-wide-types -fstrict-enum-precision -fstrict-volatile-bitfields
-// -fsync-libcalls -fthread-jumps -ftoplevel-reorder -ftrapping-math
-// -ftree-bit-ccp -ftree-builtin-call-dce -ftree-ccp -ftree-ch
-// -ftree-coalesce-vars -ftree-copy-prop -ftree-copyrename -ftree-cselim
-// -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-fre
+// -fsched-stalled-insns-dep -fschedule-insns -fschedule-insns2
+// -fsection-anchors -fshow-column -fshrink-wrap -fsigned-zeros
+// -fsplit-ivs-in-unroller -fsplit-wide-types -fstrict-enum-precision
+// -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+// -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp
+// -ftree-builtin-call-dce -ftree-ccp -ftree-ch -ftree-coalesce-vars
+// -ftree-copy-prop -ftree-copyrename -ftree-cselim -ftree-dce
+// -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-fre
 // -ftree-loop-if-convert -ftree-loop-im -ftree-loop-ivcanon
 // -ftree-loop-optimize -ftree-loop-vectorize -ftree-parallelize-loops=
 // -ftree-phiprop -ftree-pre -ftree-pta -ftree-reassoc -ftree-scev-cprop
 // -ftree-sink -ftree-slsr -ftree-sra -ftree-switch-conversion
 // -ftree-tail-merge -ftree-ter -ftree-vrp -funit-at-a-time
-// -funroll-codesize-limit -fvar-tracking -fvar-tracking-assignments
-// -fverbose-asm -fzero-initialized-in-bss -mandroid -mbionic
-// -mfix-cortex-a53-835769 -mgeneral-regs-only -mlittle-endian -mlra
-// -momit-leaf-frame-pointer
+// -funroll-codesize-limit -fverbose-asm -fzero-initialized-in-bss
+// -mandroid -mbionic -mfix-cortex-a53-835769 -mgeneral-regs-only
+// -mlittle-endian -mlra -momit-leaf-frame-pointer
 
 	.text
 .Ltext0:
@@ -783,15 +784,15 @@ main:
 .Letext0:
 	.section	.debug_info,"",%progbits
 .Ldebug_info0:
-	.4byte	0x9e
+	.4byte	0x97
 	.2byte	0x4
 	.4byte	.Ldebug_abbrev0
 	.byte	0x8
 	.uleb128 0x1
-	.4byte	.LASF12
+	.4byte	.LASF11
 	.byte	0x1
+	.4byte	.LASF12
 	.4byte	.LASF13
-	.4byte	.LASF14
 	.4byte	.Ldebug_ranges0+0
 	.8byte	0
 	.4byte	.Ldebug_line0
@@ -829,7 +830,7 @@ main:
 	.4byte	.LASF6
 	.uleb128 0x2
 	.byte	0x8
-	.byte	0x7
+	.byte	0x5
 	.4byte	.LASF7
 	.uleb128 0x2
 	.byte	0x8
@@ -840,15 +841,11 @@ main:
 	.byte	0x8
 	.4byte	.LASF9
 	.uleb128 0x2
-	.byte	0x8
-	.byte	0x5
-	.4byte	.LASF10
-	.uleb128 0x2
 	.byte	0x1
 	.byte	0x2
-	.4byte	.LASF11
+	.4byte	.LASF10
 	.uleb128 0x4
-	.4byte	.LASF15
+	.4byte	.LASF14
 	.byte	0x1
 	.byte	0x8
 	.4byte	0x45
@@ -951,11 +948,11 @@ main:
 	.string	"long long int"
 .LASF4:
 	.string	"unsigned int"
-.LASF14:
+.LASF13:
 	.string	"/home/thicklizard/m9_kernel"
-.LASF15:
+.LASF14:
 	.string	"main"
-.LASF7:
+.LASF8:
 	.string	"long unsigned int"
 .LASF6:
 	.string	"long long unsigned int"
@@ -963,22 +960,21 @@ main:
 	.string	"unsigned char"
 .LASF9:
 	.string	"char"
-.LASF10:
+.LASF7:
 	.string	"long int"
-.LASF11:
+.LASF10:
 	.string	"_Bool"
 .LASF3:
 	.string	"short unsigned int"
 .LASF0:
 	.string	"signed char"
-.LASF13:
-	.string	"scripts/mod/devicetable-offsets.c"
+.LASF11:
+	.ascii	"GNU C 4.9.x-google 20140827 (prerelease) -mbionic -fpic -mli"
+	.ascii	"ttle-endian -mge"
+	.string	"neral-regs-only -mabi=lp64 -g -O2 -fno-strict-aliasing -fno-common -fno-delete-null-pointer-checks -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -femit-struct-debug-baseonly -fno-var-tracking -fno-strict-overflow -fconserve-stack"
 .LASF12:
-	.ascii	"GNU C 4.9.x-google 20140827 ("
-	.string	"prerelease) -mbionic -fpic -mlittle-endian -mgeneral-regs-only -mabi=lp64 -g -Os -fno-strict-aliasing -fno-common -fno-delete-null-pointer-checks -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-strict-overflow -fconserve-stack"
+	.string	"scripts/mod/devicetable-offsets.c"
 .LASF2:
 	.string	"short int"
-.LASF8:
-	.string	"sizetype"
 	.ident	"GCC: (GNU) 4.9.x-google 20140827 (prerelease)"
 	.section	.note.GNU-stack,"",%progbits

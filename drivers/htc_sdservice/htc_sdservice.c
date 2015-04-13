@@ -145,7 +145,7 @@ out:
 static int do_hash(uint8_t *input_buf, uint32_t type, uint32_t mask)
 {
 	struct crypto_hash *tfm;
-	int err;
+	int err = 0;
     struct hash_desc desc;
     struct scatterlist sg[1];
     unsigned char tmp[32];

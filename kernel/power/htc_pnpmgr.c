@@ -1468,7 +1468,7 @@ fail:
 static void init_cluster_info(void)
 {
 	const struct device_node *top = NULL;
-	int ret;
+	int ret = 0;
 
 	top = of_find_compatible_node(NULL, NULL,
 					 "htc,perf_table_v2");

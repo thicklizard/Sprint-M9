@@ -19,19 +19,19 @@ MODULE_INFO(intree, "Y");
 static const struct modversion_info ____versions[]
 __used
 __attribute__((section("__versions"))) = {
-	{ 0xe6df0042, __VMLINUX_SYMBOL_STR(module_layout) },
-	{ 0xdf7ffb2c, __VMLINUX_SYMBOL_STR(crypto_rng_type) },
+	{ 0x2fc54ef0, __VMLINUX_SYMBOL_STR(module_layout) },
+	{ 0xeeb3b18, __VMLINUX_SYMBOL_STR(crypto_rng_type) },
 	{ 0x15692c87, __VMLINUX_SYMBOL_STR(param_ops_int) },
-	{ 0x1d600889, __VMLINUX_SYMBOL_STR(crypto_unregister_algs) },
-	{ 0xc35681a7, __VMLINUX_SYMBOL_STR(crypto_register_algs) },
+	{ 0x994ed00b, __VMLINUX_SYMBOL_STR(crypto_unregister_algs) },
+	{ 0xbd9793fd, __VMLINUX_SYMBOL_STR(crypto_register_algs) },
 	{ 0xdcb764ad, __VMLINUX_SYMBOL_STR(memset) },
 	{ 0x449ad0a7, __VMLINUX_SYMBOL_STR(memcmp) },
 	{ 0x167c5967, __VMLINUX_SYMBOL_STR(print_hex_dump) },
-	{ 0x426315c5, __VMLINUX_SYMBOL_STR(crypto_alloc_base) },
-	{ 0xabbbd444, __VMLINUX_SYMBOL_STR(_raw_spin_unlock_bh) },
+	{ 0x7142b692, __VMLINUX_SYMBOL_STR(crypto_alloc_base) },
 	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
+	{ 0xabbbd444, __VMLINUX_SYMBOL_STR(_raw_spin_unlock_bh) },
 	{ 0xf6f0ffed, __VMLINUX_SYMBOL_STR(_raw_spin_lock_bh) },
-	{ 0xcc4a5e97, __VMLINUX_SYMBOL_STR(crypto_destroy_tfm) },
+	{ 0x3131e2ff, __VMLINUX_SYMBOL_STR(crypto_destroy_tfm) },
 };
 
 static const char __module_depends[]

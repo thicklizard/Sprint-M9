@@ -15,12 +15,12 @@ MODULE_INFO(intree, "Y");
 static const struct modversion_info ____versions[]
 __used
 __attribute__((section("__versions"))) = {
-	{ 0xe6df0042, __VMLINUX_SYMBOL_STR(module_layout) },
-	{ 0xfe990052, __VMLINUX_SYMBOL_STR(gpio_free) },
+	{ 0x2fc54ef0, __VMLINUX_SYMBOL_STR(module_layout) },
+	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
 	{ 0xa8f59416, __VMLINUX_SYMBOL_STR(gpio_direction_output) },
 	{ 0x47229b5c, __VMLINUX_SYMBOL_STR(gpio_request) },
-	{ 0x9bdbd0dc, __VMLINUX_SYMBOL_STR(input_set_capability) },
-	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
+	{ 0x7467202e, __VMLINUX_SYMBOL_STR(input_set_capability) },
+	{ 0xfe990052, __VMLINUX_SYMBOL_STR(gpio_free) },
 	{ 0x432fd7f6, __VMLINUX_SYMBOL_STR(__gpio_set_value) },
 };
 

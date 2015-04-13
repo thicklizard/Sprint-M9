@@ -12,9 +12,11 @@ kernel/drivers/char/hw_random/fips_drbg.ko
 kernel/drivers/char/hw_random/ctr_drbg.ko
 kernel/drivers/char/hw_random/msm_fips_selftest.ko
 kernel/drivers/cpufreq/cpufreq_stats.ko
+kernel/drivers/cpufreq/cpufreq_performance.ko
 kernel/drivers/cpufreq/cpufreq_powersave.ko
 kernel/drivers/cpufreq/cpufreq_userspace.ko
 kernel/drivers/cpufreq/cpufreq_ondemand.ko
+kernel/drivers/cpufreq/cpufreq_conservative.ko
 kernel/drivers/cpufreq/cpufreq_interactive.ko
 kernel/drivers/cpufreq/cpu-boost.ko
 kernel/drivers/cpufreq/cpufreq_persistent_stats.ko
