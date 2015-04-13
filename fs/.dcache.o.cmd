@@ -3,6 +3,7 @@ cmd_fs/dcache.o := /home/thicklizard/m9_kernel/scripts/gcc-wrapper.py /home/thic
 source_fs/dcache.o := fs/dcache.c
 
 deps_fs/dcache.o := \
+    $(wildcard include/config/vfs/cache/pressure.h) \
     $(wildcard include/config/sysctl.h) \
     $(wildcard include/config/proc/fs.h) \
     $(wildcard include/config/dcache/word/access.h) \
