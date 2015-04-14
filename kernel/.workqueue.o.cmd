@@ -5,6 +5,7 @@ source_kernel/workqueue.o := kernel/workqueue.c
 deps_kernel/workqueue.o := \
     $(wildcard include/config/sysfs.h) \
     $(wildcard include/config/lockdep.h) \
+    $(wildcard include/config/wq/power/efficient/default.h) \
     $(wildcard include/config/debug/objects/work.h) \
     $(wildcard include/config/smp.h) \
     $(wildcard include/config/freezer.h) \

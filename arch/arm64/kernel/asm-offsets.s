@@ -831,7 +831,7 @@ main:
 	.uleb128 0xf
 	.4byte	.LASF49
 	.byte	0x12
-	.2byte	0x151
+	.2byte	0x152
 	.4byte	0x26b
 	.uleb128 0x12
 	.byte	0x8
@@ -839,7 +839,7 @@ main:
 	.uleb128 0xf
 	.4byte	.LASF50
 	.byte	0x12
-	.2byte	0x154
+	.2byte	0x155
 	.4byte	0x26b
 	.uleb128 0xf
 	.4byte	.LASF51
