@@ -1,1 +1,1 @@
-cmd_drivers/gpu/msm/built-in.o :=  /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o drivers/gpu/msm/built-in.o drivers/gpu/msm/msm_kgsl_core.o drivers/gpu/msm/msm_adreno.o 
+cmd_drivers/gpu/msm/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ld -EL    -r -o drivers/gpu/msm/built-in.o drivers/gpu/msm/msm_kgsl_core.o drivers/gpu/msm/msm_adreno.o 

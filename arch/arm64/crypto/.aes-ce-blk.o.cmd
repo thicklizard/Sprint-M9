@@ -1,1 +1,1 @@
-cmd_arch/arm64/crypto/aes-ce-blk.o := /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o arch/arm64/crypto/aes-ce-blk.o arch/arm64/crypto/aes-glue-ce.o arch/arm64/crypto/aes-ce.o 
+cmd_arch/arm64/crypto/aes-ce-blk.o := /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ld -EL    -r -o arch/arm64/crypto/aes-ce-blk.o arch/arm64/crypto/aes-glue-ce.o arch/arm64/crypto/aes-ce.o 

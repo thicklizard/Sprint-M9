@@ -1,1 +1,1 @@
-cmd_drivers/usb/serial/built-in.o :=  /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o drivers/usb/serial/built-in.o drivers/usb/serial/usbserial.o drivers/usb/serial/csvt.o 
+cmd_drivers/usb/serial/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ld -EL    -r -o drivers/usb/serial/built-in.o drivers/usb/serial/usbserial.o drivers/usb/serial/csvt.o 

@@ -1,1 +1,1 @@
-cmd_arch/arm64/crypto/ghash-ce.o := /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o arch/arm64/crypto/ghash-ce.o arch/arm64/crypto/ghash-ce-glue.o arch/arm64/crypto/ghash-ce-core.o 
+cmd_arch/arm64/crypto/ghash-ce.o := /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ld -EL    -r -o arch/arm64/crypto/ghash-ce.o arch/arm64/crypto/ghash-ce-glue.o arch/arm64/crypto/ghash-ce-core.o 

@@ -1,1 +1,1 @@
-cmd_sound/core/snd-timer.o := /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o sound/core/snd-timer.o sound/core/timer.o 
+cmd_sound/core/snd-timer.o := /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ld -EL    -r -o sound/core/snd-timer.o sound/core/timer.o 

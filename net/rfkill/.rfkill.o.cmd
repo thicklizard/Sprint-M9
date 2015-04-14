@@ -1,1 +1,1 @@
-cmd_net/rfkill/rfkill.o := /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o net/rfkill/rfkill.o net/rfkill/core.o 
+cmd_net/rfkill/rfkill.o := /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ld -EL    -r -o net/rfkill/rfkill.o net/rfkill/core.o 

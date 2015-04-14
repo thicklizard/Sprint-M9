@@ -3528,7 +3528,7 @@ static inline int get_bpd(const char *name)
 int pmi8994_is_power_ok_check(void)
 {
 	u8 reg = 0;
-	int prev_vbus_uv, vbus_uv, i, diff;
+	int prev_vbus_uv = 0, vbus_uv = 0, i = 0, diff = 0;
 
 	if (!the_chip) {
 		pr_err("called before init\n");

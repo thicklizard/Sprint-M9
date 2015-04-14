@@ -1,1 +1,1 @@
-cmd_drivers/staging/iio/frequency/built-in.o :=  rm -f drivers/staging/iio/frequency/built-in.o; /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ar rcsD drivers/staging/iio/frequency/built-in.o
+cmd_drivers/staging/iio/frequency/built-in.o :=  rm -f drivers/staging/iio/frequency/built-in.o; /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ar rcsD drivers/staging/iio/frequency/built-in.o

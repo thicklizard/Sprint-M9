@@ -1,1 +1,1 @@
-cmd_drivers/iio/imu/built-in.o :=  /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o drivers/iio/imu/built-in.o drivers/iio/imu/inv_mpu6050/built-in.o 
+cmd_drivers/iio/imu/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ld -EL    -r -o drivers/iio/imu/built-in.o drivers/iio/imu/inv_mpu6050/built-in.o 

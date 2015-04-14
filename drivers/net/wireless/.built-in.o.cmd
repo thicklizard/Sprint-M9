@@ -1,1 +1,1 @@
-cmd_drivers/net/wireless/built-in.o :=  /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o drivers/net/wireless/built-in.o drivers/net/wireless/bcmdhd_4356/built-in.o drivers/net/wireless/bcmdhd_gpio/built-in.o drivers/net/wireless/htc_wifi_nvs.o 
+cmd_drivers/net/wireless/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ld -EL    -r -o drivers/net/wireless/built-in.o drivers/net/wireless/bcmdhd_4356/built-in.o drivers/net/wireless/bcmdhd_gpio/built-in.o drivers/net/wireless/htc_wifi_nvs.o 

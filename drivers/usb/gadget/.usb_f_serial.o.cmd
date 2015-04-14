@@ -1,1 +1,1 @@
-cmd_drivers/usb/gadget/usb_f_serial.o := /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o drivers/usb/gadget/usb_f_serial.o drivers/usb/gadget/f_serial.o 
+cmd_drivers/usb/gadget/usb_f_serial.o := /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ld -EL    -r -o drivers/usb/gadget/usb_f_serial.o drivers/usb/gadget/f_serial.o 

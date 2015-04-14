@@ -1,7 +1,7 @@
-	.cpu generic+fp+simd
+	.cpu cortex-a53+fp+simd
 	.file	"bounds.c"
-// GNU C (GCC) version 4.9.x-google 20140827 (prerelease) (aarch64-linux-android)
-//	compiled by GNU C version 4.8, GMP version 5.0.5, MPFR version 3.1.1, MPC version 1.0.1
+// GNU C (crosstool-NG linaro-1.13.1-4.8-2014.04 - Linaro GCC 4.8-2014.04) version 4.8.3 20140401 (prerelease) (aarch64-linux-gnu)
+//	compiled by GNU C version 4.1.3 20080704 (prerelease) (Ubuntu 4.1.2-27ubuntu1), GMP version 5.0.2, MPFR version 3.1.0, MPC version 0.9
 // GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 // options passed:  -nostdinc
 // -I /home/thicklizard/m9_kernel/arch/arm64/include
@@ -9,59 +9,58 @@
 // -I /home/thicklizard/m9_kernel/arch/arm64/include/uapi
 // -I arch/arm64/include/generated/uapi
 // -I /home/thicklizard/m9_kernel/include/uapi -I include/generated/uapi
-// -iprefix /home/thicklizard/aarch64-linux-android-4.9/bin/../lib/gcc/aarch64-linux-android/4.9.x-google/
+// -imultiarch aarch64-linux-gnu
+// -iprefix /home/thicklizard/android-toolchain-eabioptimized7/bin/../lib/gcc/aarch64-linux-gnu/4.8.3/
+// -isysroot /home/thicklizard/android-toolchain-eabioptimized7/bin/../aarch64-linux-gnu/libc
 // -D __KERNEL__ -D CC_HAVE_ASM_GOTO -D KBUILD_STR(s)=#s
 // -D KBUILD_BASENAME=KBUILD_STR(bounds)
 // -D KBUILD_MODNAME=KBUILD_STR(bounds)
-// -isystem /home/thicklizard/aarch64-linux-android-4.9/bin/../lib/gcc/aarch64-linux-android/4.9.x-google/include
+// -isystem /home/thicklizard/android-toolchain-eabioptimized7/bin/../lib/gcc/aarch64-linux-gnu/4.8.3/include
 // -include /home/thicklizard/m9_kernel/include/linux/kconfig.h
-// -MD kernel/.bounds.s.d kernel/bounds.c -mbionic -fpic -mlittle-endian
-// -mgeneral-regs-only -mabi=lp64 -auxbase-strip kernel/bounds.s -g -O2
-// -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs
-// -Werror=implicit-function-declaration -Wno-format-security
-// -Wframe-larger-than=2048 -Wno-unused-but-set-variable
-// -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-aliasing
-// -fno-common -fno-delete-null-pointer-checks -fno-stack-protector
+// -MD kernel/.bounds.s.d kernel/bounds.c -mlittle-endian
+// -mgeneral-regs-only -auxbase-strip kernel/bounds.s -g -O2 -Wall -Wundef
+// -Wstrict-prototypes -Wno-trigraphs -Werror=implicit-function-declaration
+// -Wno-format-security -Wframe-larger-than=2048
+// -Wno-unused-but-set-variable -Wdeclaration-after-statement
+// -Wno-pointer-sign -fno-strict-aliasing -fno-common
+// -fno-delete-null-pointer-checks -fno-stack-protector
 // -fno-omit-frame-pointer -fno-optimize-sibling-calls
 // -femit-struct-debug-baseonly -fno-var-tracking -fno-strict-overflow
 // -fconserve-stack -fverbose-asm
 // options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
 // -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments
 // -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
-// -fdefer-pop -fdevirtualize -fdevirtualize-speculatively -fdwarf2-cfi-asm
-// -fearly-inlining -feliminate-unused-debug-types
-// -fexpensive-optimizations -fforward-propagate -ffunction-cse -fgcse
-// -fgcse-lm -fgnu-runtime -fgnu-unique -fguess-branch-probability
-// -fhoist-adjacent-loads -fident -fif-conversion -fif-conversion2
-// -findirect-inlining -finline -finline-atomics
-// -finline-functions-called-once -finline-small-functions -fipa-cp
-// -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+// -fdefer-pop -fdevirtualize -fdwarf2-cfi-asm -fearly-inlining
+// -feliminate-unused-debug-types -fexpensive-optimizations
+// -fforward-propagate -ffunction-cse -fgcse -fgcse-lm -fgnu-runtime
+// -fguess-branch-probability -fhoist-adjacent-loads -fident
+// -fif-conversion -fif-conversion2 -findirect-inlining -finline
+// -finline-atomics -finline-functions-called-once -finline-small-functions
+// -fipa-cp -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
 // -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
-// -fisolate-erroneous-paths-dereference -fivopts -fkeep-static-consts
-// -fleading-underscore -fmath-errno -fmerge-constants
-// -fmerge-debug-strings -fmove-loop-invariants -fomit-frame-pointer
-// -foptimize-strlen -fpartial-inlining -fpeel-codesize-limit -fpeephole
-// -fpeephole2 -fpic -fprefetch-loop-arrays -free -freg-struct-return
-// -freorder-blocks -freorder-functions -frerun-cse-after-loop
-// -fsched-critical-path-heuristic -fsched-dep-count-heuristic
-// -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
-// -fsched-rank-heuristic -fsched-spec -fsched-spec-insn-heuristic
-// -fsched-stalled-insns-dep -fschedule-insns -fschedule-insns2
-// -fsection-anchors -fshow-column -fshrink-wrap -fsigned-zeros
-// -fsplit-ivs-in-unroller -fsplit-wide-types -fstrict-enum-precision
+// -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+// -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+// -fomit-frame-pointer -foptimize-register-move -foptimize-strlen
+// -fpartial-inlining -fpeephole -fpeephole2 -fprefetch-loop-arrays -free
+// -freg-struct-return -fregmove -freorder-blocks -freorder-functions
+// -frerun-cse-after-loop -fsched-critical-path-heuristic
+// -fsched-dep-count-heuristic -fsched-group-heuristic -fsched-interblock
+// -fsched-last-insn-heuristic -fsched-rank-heuristic -fsched-spec
+// -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+// -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+// -fsigned-zeros -fsplit-ivs-in-unroller -fsplit-wide-types
 // -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
 // -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp
 // -ftree-builtin-call-dce -ftree-ccp -ftree-ch -ftree-coalesce-vars
 // -ftree-copy-prop -ftree-copyrename -ftree-cselim -ftree-dce
 // -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-fre
 // -ftree-loop-if-convert -ftree-loop-im -ftree-loop-ivcanon
-// -ftree-loop-optimize -ftree-loop-vectorize -ftree-parallelize-loops=
-// -ftree-phiprop -ftree-pre -ftree-pta -ftree-reassoc -ftree-scev-cprop
-// -ftree-sink -ftree-slsr -ftree-sra -ftree-switch-conversion
-// -ftree-tail-merge -ftree-ter -ftree-vrp -funit-at-a-time
-// -funroll-codesize-limit -fverbose-asm -fzero-initialized-in-bss
-// -mandroid -mbionic -mfix-cortex-a53-835769 -mgeneral-regs-only
-// -mlittle-endian -mlra -momit-leaf-frame-pointer
+// -ftree-loop-optimize -ftree-parallelize-loops= -ftree-phiprop -ftree-pre
+// -ftree-pta -ftree-reassoc -ftree-scev-cprop -ftree-sink
+// -ftree-slp-vectorize -ftree-slsr -ftree-sra -ftree-switch-conversion
+// -ftree-tail-merge -ftree-ter -ftree-vrp -funit-at-a-time -fverbose-asm
+// -fzero-initialized-in-bss -mgeneral-regs-only -mglibc -mlittle-endian
+// -momit-leaf-frame-pointer
 
 	.text
 .Ltext0:
@@ -581,6 +580,9 @@ foo:
 	.string	"PG_pinned"
 .LASF18:
 	.string	"PG_slab"
+.LASF52:
+	.ascii	"GNU C 4.8.3 20140401 (prerelease) -mlittle-"
+	.string	"endian -mgeneral-regs-only -g -O2 -fno-strict-aliasing -fno-common -fno-delete-null-pointer-checks -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -femit-struct-debug-baseonly -fno-var-tracking -fno-strict-overflow -fconserve-stack"
 .LASF19:
 	.string	"PG_owner_priv_1"
 .LASF17:
@@ -605,10 +607,6 @@ foo:
 	.string	"PCG_USED"
 .LASF20:
 	.string	"PG_arch_1"
-.LASF52:
-	.ascii	"GNU C 4.9.x-google 20140827 (prerelease) -mbionic -fpic -mli"
-	.ascii	"ttle-endian -mge"
-	.string	"neral-regs-only -mabi=lp64 -g -O2 -fno-strict-aliasing -fno-common -fno-delete-null-pointer-checks -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -femit-struct-debug-baseonly -fno-var-tracking -fno-strict-overflow -fconserve-stack"
 .LASF7:
 	.string	"long int"
 .LASF44:
@@ -627,5 +625,4 @@ foo:
 	.string	"PG_mlocked"
 .LASF42:
 	.string	"ZONE_DMA"
-	.ident	"GCC: (GNU) 4.9.x-google 20140827 (prerelease)"
-	.section	.note.GNU-stack,"",%progbits
+	.ident	"GCC: (crosstool-NG linaro-1.13.1-4.8-2014.04 - Linaro GCC 4.8-2014.04) 4.8.3 20140401 (prerelease)"

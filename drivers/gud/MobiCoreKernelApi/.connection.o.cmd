@@ -1,4 +1,4 @@
-cmd_drivers/gud/MobiCoreKernelApi/connection.o := /home/thicklizard/m9_kernel/scripts/gcc-wrapper.py /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -Wp,-MD,drivers/gud/MobiCoreKernelApi/.connection.o.d  -nostdinc -isystem /home/thicklizard/aarch64-linux-android-4.9/bin/../lib/gcc/aarch64-linux-android/4.9.x-google/include -I/home/thicklizard/m9_kernel/arch/arm64/include -Iarch/arm64/include/generated  -Iinclude -I/home/thicklizard/m9_kernel/arch/arm64/include/uapi -Iarch/arm64/include/generated/uapi -I/home/thicklizard/m9_kernel/include/uapi -Iinclude/generated/uapi -include /home/thicklizard/m9_kernel/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -mgeneral-regs-only -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -femit-struct-debug-baseonly -fno-var-tracking -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO -DNDEBUG -Idrivers/gud -Wno-declaration-after-statement -DMC_NETLINK_COMPAT_V37 -Idrivers/gud/MobiCoreDriver/platforms/MSM8960_SURF_STD -Idrivers/gud/MobiCoreDriver/public -Idrivers/gud/MobiCoreKernelApi/include -Idrivers/gud/MobiCoreKernelApi/public  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(connection)"  -D"KBUILD_MODNAME=KBUILD_STR(mcKernelApi)" -c -o drivers/gud/MobiCoreKernelApi/.tmp_connection.o drivers/gud/MobiCoreKernelApi/connection.c
+cmd_drivers/gud/MobiCoreKernelApi/connection.o := /home/thicklizard/m9_kernel/scripts/gcc-wrapper.py /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-gcc -Wp,-MD,drivers/gud/MobiCoreKernelApi/.connection.o.d  -nostdinc -isystem /home/thicklizard/android-toolchain-eabioptimized7/bin/../lib/gcc/aarch64-linux-gnu/4.8.3/include -I/home/thicklizard/m9_kernel/arch/arm64/include -Iarch/arm64/include/generated  -Iinclude -I/home/thicklizard/m9_kernel/arch/arm64/include/uapi -Iarch/arm64/include/generated/uapi -I/home/thicklizard/m9_kernel/include/uapi -Iinclude/generated/uapi -include /home/thicklizard/m9_kernel/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -mgeneral-regs-only -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -femit-struct-debug-baseonly -fno-var-tracking -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO -DNDEBUG -Idrivers/gud -Wno-declaration-after-statement -DMC_NETLINK_COMPAT_V37 -Idrivers/gud/MobiCoreDriver/platforms/MSM8960_SURF_STD -Idrivers/gud/MobiCoreDriver/public -Idrivers/gud/MobiCoreKernelApi/include -Idrivers/gud/MobiCoreKernelApi/public  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(connection)"  -D"KBUILD_MODNAME=KBUILD_STR(mcKernelApi)" -c -o drivers/gud/MobiCoreKernelApi/.tmp_connection.o drivers/gud/MobiCoreKernelApi/connection.c
 
 source_drivers/gud/MobiCoreKernelApi/connection.o := drivers/gud/MobiCoreKernelApi/connection.c
 
@@ -112,7 +112,7 @@ deps_drivers/gud/MobiCoreKernelApi/connection.o := \
     $(wildcard include/config/prove/locking.h) \
     $(wildcard include/config/ring/buffer.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
-  /home/thicklizard/aarch64-linux-android-4.9/lib/gcc/aarch64-linux-android/4.9.x-google/include/stdarg.h \
+  /home/thicklizard/android-toolchain-eabioptimized7/lib/gcc/aarch64-linux-gnu/4.8.3/include/stdarg.h \
   include/linux/bitops.h \
   /home/thicklizard/m9_kernel/arch/arm64/include/asm/bitops.h \
   /home/thicklizard/m9_kernel/arch/arm64/include/asm/barrier.h \
@@ -871,8 +871,8 @@ deps_drivers/gud/MobiCoreKernelApi/connection.o := \
   include/net/rtnetlink.h \
   include/net/netlink.h \
   drivers/gud/MobiCoreKernelApi/connection.h \
-  /home/thicklizard/aarch64-linux-android-4.9/lib/gcc/aarch64-linux-android/4.9.x-google/include/stddef.h \
-  /home/thicklizard/aarch64-linux-android-4.9/lib/gcc/aarch64-linux-android/4.9.x-google/include/stdbool.h \
+  /home/thicklizard/android-toolchain-eabioptimized7/lib/gcc/aarch64-linux-gnu/4.8.3/include/stddef.h \
+  /home/thicklizard/android-toolchain-eabioptimized7/lib/gcc/aarch64-linux-gnu/4.8.3/include/stdbool.h \
   drivers/gud/MobiCoreKernelApi/common.h \
   drivers/gud/MobiCoreKernelApi/include/mcinq.h \
 

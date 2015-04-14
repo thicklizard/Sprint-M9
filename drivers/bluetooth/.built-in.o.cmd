@@ -1,1 +1,1 @@
-cmd_drivers/bluetooth/built-in.o :=  /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o drivers/bluetooth/built-in.o drivers/bluetooth/board-8994-rfkill.o drivers/bluetooth/htc_bdaddress.o drivers/bluetooth/bluesleep.o 
+cmd_drivers/bluetooth/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ld -EL    -r -o drivers/bluetooth/built-in.o drivers/bluetooth/board-8994-rfkill.o drivers/bluetooth/htc_bdaddress.o drivers/bluetooth/bluesleep.o 

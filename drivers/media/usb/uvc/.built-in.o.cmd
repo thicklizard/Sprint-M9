@@ -1,1 +1,1 @@
-cmd_drivers/media/usb/uvc/built-in.o :=  /home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld -EL    -r -o drivers/media/usb/uvc/built-in.o drivers/media/usb/uvc/uvcvideo.o 
+cmd_drivers/media/usb/uvc/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ld -EL    -r -o drivers/media/usb/uvc/built-in.o drivers/media/usb/uvc/uvcvideo.o 
