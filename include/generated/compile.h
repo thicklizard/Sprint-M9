@@ -1,7 +1,7 @@
-/* This file is auto generated, version 12 */
+/* This file is auto generated, version 2 */
 /* SMP PREEMPT */
 #define UTS_MACHINE "arm64"
-#define UTS_VERSION "#12 SMP PREEMPT Tue Apr 14 14:29:38 CDT 2015"
+#define UTS_VERSION "#2 SMP PREEMPT Thu Apr 16 16:31:00 CDT 2015"
 #define LINUX_COMPILE_BY "thicklizard"
 #define LINUX_COMPILE_HOST "BadseedCustoms"
 #define LINUX_COMPILER "gcc version 4.8.3 20140401 (prerelease) (crosstool-NG linaro-1.13.1-4.8-2014.04 - Linaro GCC 4.8-2014.04) "

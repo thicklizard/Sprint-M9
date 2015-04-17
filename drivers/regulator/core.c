@@ -1928,8 +1928,8 @@ int regulator_disable_deferred(struct regulator *regulator, int ms)
 	mutex_unlock(&rdev->mutex);
 
 	ret = queue_delayed_work(system_power_efficient_wq,
-				&rdev->disable_work,
-				msecs_to_jiffies(ms));
+				 &rdev->disable_work,
+				 msecs_to_jiffies(ms));
 	if (ret < 0)
 		return ret;
 	else
