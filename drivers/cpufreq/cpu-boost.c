@@ -271,9 +271,6 @@ static int boost_mig_sync_thread(void *data)
 		if (ret)
 			continue;
 
-		if (s->task_load < migration_load_threshold)
-			continue;
-
 		req_freq = load_based_syncs ?
 			(dest_policy.cpuinfo.max_freq * s->task_load) / 100 :
 							src_policy.cur;
@@ -336,7 +333,7 @@ static int boost_migration_notify(struct notifier_block *nb,
 	spin_lock_irqsave(&s->lock, flags);
 	s->pending = true;
 	s->src_cpu = mnd->src_cpu;
-	s->task_load = mnd->load;
+	s->task_load = load_based_syncs ? mnd->load : 0;
 	spin_unlock_irqrestore(&s->lock, flags);
 	wake_up(&s->sync_wq);
 
@@ -414,7 +411,7 @@ static void cpuboost_input_event(struct input_handle *handle,
 		return;
 
 	now = ktime_to_us(ktime_get());
-	if (now - last_input_time < MIN_INPUT_INTERVAL)
+	if (now - last_input_time < (input_boost_ms * USEC_PER_MSEC))
 		return;
 
 	cancel_delayed_work(&input_boost_rem);
