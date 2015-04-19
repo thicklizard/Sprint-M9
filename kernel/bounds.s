@@ -25,42 +25,50 @@
 // -Wno-pointer-sign -fno-strict-aliasing -fno-common
 // -fno-delete-null-pointer-checks -fno-stack-protector
 // -fno-omit-frame-pointer -fno-optimize-sibling-calls
-// -femit-struct-debug-baseonly -fno-var-tracking -fno-strict-overflow
-// -fconserve-stack -fverbose-asm
-// options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
-// -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments
-// -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
-// -fdefer-pop -fdevirtualize -fdwarf2-cfi-asm -fearly-inlining
+// -fno-var-tracking-assignments -femit-struct-debug-baseonly
+// -fno-var-tracking -fno-strict-overflow -fconserve-stack -fgcse-sm
+// -fgcse-las -fsched-spec-load -ffast-math -fsingle-precision-constant
+// -ftree-vectorize -ftree-loop-im -ftree-loop-ivcanon -fivopts -fgraphite
+// -floop-parallelize-all -floop-interchange -floop-strip-mine -floop-block
+// -floop-nest-optimize -frename-registers -fverbose-asm
+// options enabled:  -faggressive-loop-optimizations -fassociative-math
+// -fauto-inc-dec -fbranch-count-reg -fcaller-saves
+// -fcombine-stack-adjustments -fcompare-elim -fcprop-registers
+// -fcrossjumping -fcse-follow-jumps -fcx-limited-range -fdefer-pop
+// -fdevirtualize -fdwarf2-cfi-asm -fearly-inlining
 // -feliminate-unused-debug-types -fexpensive-optimizations
-// -fforward-propagate -ffunction-cse -fgcse -fgcse-lm -fgnu-runtime
-// -fguess-branch-probability -fhoist-adjacent-loads -fident
-// -fif-conversion -fif-conversion2 -findirect-inlining -finline
-// -finline-atomics -finline-functions-called-once -finline-small-functions
-// -fipa-cp -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+// -ffinite-math-only -fforward-propagate -ffunction-cse -fgcse -fgcse-las
+// -fgcse-lm -fgcse-sm -fgnu-runtime -fgraphite -fguess-branch-probability
+// -fhoist-adjacent-loads -fident -fif-conversion -fif-conversion2
+// -findirect-inlining -finline -finline-atomics
+// -finline-functions-called-once -finline-small-functions -fipa-cp
+// -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
 // -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
-// -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
-// -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
-// -fomit-frame-pointer -foptimize-register-move -foptimize-strlen
-// -fpartial-inlining -fpeephole -fpeephole2 -fprefetch-loop-arrays -free
-// -freg-struct-return -fregmove -freorder-blocks -freorder-functions
+// -fivopts -fkeep-static-consts -fleading-underscore -floop-block
+// -floop-interchange -floop-nest-optimize -floop-parallelize-all
+// -floop-strip-mine -fmerge-constants -fmerge-debug-strings
+// -fmove-loop-invariants -fomit-frame-pointer -foptimize-register-move
+// -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+// -fprefetch-loop-arrays -freciprocal-math -free -freg-struct-return
+// -fregmove -frename-registers -freorder-blocks -freorder-functions
 // -frerun-cse-after-loop -fsched-critical-path-heuristic
 // -fsched-dep-count-heuristic -fsched-group-heuristic -fsched-interblock
 // -fsched-last-insn-heuristic -fsched-rank-heuristic -fsched-spec
-// -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
-// -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
-// -fsigned-zeros -fsplit-ivs-in-unroller -fsplit-wide-types
-// -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
-// -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp
-// -ftree-builtin-call-dce -ftree-ccp -ftree-ch -ftree-coalesce-vars
-// -ftree-copy-prop -ftree-copyrename -ftree-cselim -ftree-dce
-// -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-fre
-// -ftree-loop-if-convert -ftree-loop-im -ftree-loop-ivcanon
-// -ftree-loop-optimize -ftree-parallelize-loops= -ftree-phiprop -ftree-pre
-// -ftree-pta -ftree-reassoc -ftree-scev-cprop -ftree-sink
-// -ftree-slp-vectorize -ftree-slsr -ftree-sra -ftree-switch-conversion
-// -ftree-tail-merge -ftree-ter -ftree-vrp -funit-at-a-time -fverbose-asm
-// -fzero-initialized-in-bss -mgeneral-regs-only -mglibc -mlittle-endian
-// -momit-leaf-frame-pointer
+// -fsched-spec-insn-heuristic -fsched-spec-load -fsched-stalled-insns-dep
+// -fschedule-insns -fschedule-insns2 -fsection-anchors -fshow-column
+// -fshrink-wrap -fsingle-precision-constant -fsplit-ivs-in-unroller
+// -fsplit-wide-types -fstrict-volatile-bitfields -fsync-libcalls
+// -fthread-jumps -ftoplevel-reorder -ftree-bit-ccp -ftree-builtin-call-dce
+// -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+// -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+// -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+// -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+// -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+// -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+// -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+// -ftree-ter -ftree-vectorize -ftree-vrp -funit-at-a-time
+// -funsafe-math-optimizations -fverbose-asm -fzero-initialized-in-bss
+// -mgeneral-regs-only -mglibc -mlittle-endian -momit-leaf-frame-pointer
 
 	.text
 .Ltext0:
@@ -542,6 +550,14 @@ foo:
 	.string	"__MAX_NR_ZONES"
 .LASF36:
 	.string	"PG_fscache"
+.LASF52:
+	.ascii	"GNU C 4.8.3 20140401 (prerelease) -mlittle-endian -mgeneral-"
+	.ascii	"regs-only -g -O2 -fno-strict-aliasing -fno-common -fno-delet"
+	.ascii	"e-null-pointer-checks -fno-stack-protector -fno-omit-frame-p"
+	.ascii	"ointer -fno-optimize-sibling-calls -fno-var-tracking-assignm"
+	.ascii	"ents -femit-struct-debug-baseonly -fno-var-tracking -fno-str"
+	.ascii	"ict-overflow -fconserve-stack -fgcse-"
+	.string	"sm -fgcse-las -fsched-spec-load -ffast-math -fsingle-precision-constant -ftree-vectorize -ftree-loop-im -ftree-loop-ivcanon -fivopts -fgraphite -floop-parallelize-all -floop-interchange -floop-strip-mine -floop-block -floop-nest-optimize -frename-registers"
 .LASF13:
 	.string	"PG_referenced"
 .LASF27:
@@ -580,9 +596,6 @@ foo:
 	.string	"PG_pinned"
 .LASF18:
 	.string	"PG_slab"
-.LASF52:
-	.ascii	"GNU C 4.8.3 20140401 (prerelease) -mlittle-"
-	.string	"endian -mgeneral-regs-only -g -O2 -fno-strict-aliasing -fno-common -fno-delete-null-pointer-checks -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -femit-struct-debug-baseonly -fno-var-tracking -fno-strict-overflow -fconserve-stack"
 .LASF19:
 	.string	"PG_owner_priv_1"
 .LASF17:
