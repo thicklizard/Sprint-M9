@@ -19,16 +19,16 @@ MODULE_INFO(intree, "Y");
 static const struct modversion_info ____versions[]
 __used
 __attribute__((section("__versions"))) = {
-	{ 0xe27cb90c, __VMLINUX_SYMBOL_STR(module_layout) },
-	{ 0x7b279f8f, __VMLINUX_SYMBOL_STR(input_unregister_handler) },
-	{ 0x4463265a, __VMLINUX_SYMBOL_STR(input_register_handler) },
-	{ 0xffcb8fbc, __VMLINUX_SYMBOL_STR(input_open_device) },
-	{ 0xd439e015, __VMLINUX_SYMBOL_STR(input_register_handle) },
-	{ 0x75d49319, __VMLINUX_SYMBOL_STR(kmem_cache_alloc_trace) },
-	{ 0xf69ef392, __VMLINUX_SYMBOL_STR(kmalloc_caches) },
+	{ 0x2fc54ef0, __VMLINUX_SYMBOL_STR(module_layout) },
+	{ 0x6f157536, __VMLINUX_SYMBOL_STR(input_unregister_handler) },
+	{ 0x7e0f014b, __VMLINUX_SYMBOL_STR(input_register_handler) },
+	{ 0xbec8bf8f, __VMLINUX_SYMBOL_STR(input_open_device) },
+	{ 0x63bdddff, __VMLINUX_SYMBOL_STR(input_register_handle) },
+	{ 0x6aaa1afc, __VMLINUX_SYMBOL_STR(kmem_cache_alloc_trace) },
+	{ 0x4ac4f2b5, __VMLINUX_SYMBOL_STR(kmalloc_caches) },
 	{ 0x37a0cba, __VMLINUX_SYMBOL_STR(kfree) },
-	{ 0x9977e23, __VMLINUX_SYMBOL_STR(input_unregister_handle) },
-	{ 0x71fdb8e6, __VMLINUX_SYMBOL_STR(input_close_device) },
+	{ 0xbd2abbb4, __VMLINUX_SYMBOL_STR(input_unregister_handle) },
+	{ 0x803436cd, __VMLINUX_SYMBOL_STR(input_close_device) },
 	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
 };
 

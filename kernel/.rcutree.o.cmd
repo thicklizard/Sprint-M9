@@ -631,9 +631,6 @@ deps_kernel/rcutree.o := \
   include/linux/clockchips.h \
     $(wildcard include/config/generic/clockevents/build.h) \
     $(wildcard include/config/arch/has/tick/broadcast.h) \
-  kernel/rtmutex_common.h \
-    $(wildcard include/config/rt/mutex/tester.h) \
-  kernel/rtmutex.h \
 
 kernel/rcutree.o: $(deps_kernel/rcutree.o)
 

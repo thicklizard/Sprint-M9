@@ -15,13 +15,13 @@ MODULE_INFO(intree, "Y");
 static const struct modversion_info ____versions[]
 __used
 __attribute__((section("__versions"))) = {
-	{ 0xe27cb90c, __VMLINUX_SYMBOL_STR(module_layout) },
+	{ 0x2fc54ef0, __VMLINUX_SYMBOL_STR(module_layout) },
 	{ 0x54b61562, __VMLINUX_SYMBOL_STR(hrtimer_init) },
 	{ 0xd6b8e852, __VMLINUX_SYMBOL_STR(request_threaded_irq) },
 	{ 0x3ce4ca6f, __VMLINUX_SYMBOL_STR(disable_irq) },
 	{ 0x47229b5c, __VMLINUX_SYMBOL_STR(gpio_request) },
 	{ 0x65d6d0f0, __VMLINUX_SYMBOL_STR(gpio_direction_input) },
-	{ 0xbd821960, __VMLINUX_SYMBOL_STR(input_set_capability) },
+	{ 0x7467202e, __VMLINUX_SYMBOL_STR(input_set_capability) },
 	{ 0xc0021a97, __VMLINUX_SYMBOL_STR(wakeup_source_register) },
 	{ 0x733c3b54, __VMLINUX_SYMBOL_STR(kasprintf) },
 	{ 0xd2b09ce5, __VMLINUX_SYMBOL_STR(__kmalloc) },
@@ -37,7 +37,7 @@ __attribute__((section("__versions"))) = {
 	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
 	{ 0x97fdbab9, __VMLINUX_SYMBOL_STR(_raw_spin_unlock_irqrestore) },
 	{ 0x3b887ade, __VMLINUX_SYMBOL_STR(__pm_relax) },
-	{ 0xb7c64eea, __VMLINUX_SYMBOL_STR(input_event) },
+	{ 0xd11e8f53, __VMLINUX_SYMBOL_STR(input_event) },
 	{ 0xfcec0987, __VMLINUX_SYMBOL_STR(enable_irq) },
 	{ 0x11f447ce, __VMLINUX_SYMBOL_STR(__gpio_to_irq) },
 	{ 0x6c8d5ae8, __VMLINUX_SYMBOL_STR(__gpio_get_value) },

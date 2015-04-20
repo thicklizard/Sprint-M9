@@ -87,7 +87,7 @@ main:
 #APP
 // 35 "arch/arm64/kernel/asm-offsets.c" 1
 	
-->TSK_ACTIVE_MM 512 offsetof(struct task_struct, active_mm)	//
+->TSK_ACTIVE_MM 504 offsetof(struct task_struct, active_mm)	//
 // 0 "" 2
 	.loc 1 36 0
 // 36 "arch/arm64/kernel/asm-offsets.c" 1
@@ -132,7 +132,7 @@ main:
 	.loc 1 44 0
 // 44 "arch/arm64/kernel/asm-offsets.c" 1
 	
-->THREAD_CPU_CONTEXT 1024 offsetof(struct task_struct, thread.cpu_context)	//
+->THREAD_CPU_CONTEXT 1008 offsetof(struct task_struct, thread.cpu_context)	//
 // 0 "" 2
 	.loc 1 45 0
 // 45 "arch/arm64/kernel/asm-offsets.c" 1

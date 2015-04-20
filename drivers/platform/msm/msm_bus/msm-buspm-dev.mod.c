@@ -19,13 +19,13 @@ MODULE_INFO(intree, "Y");
 static const struct modversion_info ____versions[]
 __used
 __attribute__((section("__versions"))) = {
-	{ 0xe27cb90c, __VMLINUX_SYMBOL_STR(module_layout) },
-	{ 0xa23e7936, __VMLINUX_SYMBOL_STR(noop_llseek) },
-	{ 0x93b34d79, __VMLINUX_SYMBOL_STR(misc_deregister) },
-	{ 0x5c986bd2, __VMLINUX_SYMBOL_STR(misc_register) },
+	{ 0x2fc54ef0, __VMLINUX_SYMBOL_STR(module_layout) },
+	{ 0x76b63e56, __VMLINUX_SYMBOL_STR(noop_llseek) },
+	{ 0x6f0c9a66, __VMLINUX_SYMBOL_STR(misc_deregister) },
+	{ 0xcdf3a8b3, __VMLINUX_SYMBOL_STR(misc_register) },
 	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
 	{ 0xdcb764ad, __VMLINUX_SYMBOL_STR(memset) },
-	{ 0x5d2787f3, __VMLINUX_SYMBOL_STR(dma_alloc_from_coherent) },
+	{ 0x327842e8, __VMLINUX_SYMBOL_STR(dma_alloc_from_coherent) },
 	{ 0x67c2fa54, __VMLINUX_SYMBOL_STR(__copy_to_user) },
 	{ 0xbbccdff9, __VMLINUX_SYMBOL_STR(msm_rpm_free_request) },
 	{ 0xcd9436d6, __VMLINUX_SYMBOL_STR(msm_rpm_wait_for_ack) },
@@ -33,14 +33,14 @@ __attribute__((section("__versions"))) = {
 	{ 0x47cfdaeb, __VMLINUX_SYMBOL_STR(msm_rpm_add_kvp_data) },
 	{ 0x980434a2, __VMLINUX_SYMBOL_STR(msm_rpm_create_request) },
 	{ 0xfbc74f64, __VMLINUX_SYMBOL_STR(__copy_from_user) },
-	{ 0x45689513, __VMLINUX_SYMBOL_STR(remap_pfn_range) },
-	{ 0x75d49319, __VMLINUX_SYMBOL_STR(kmem_cache_alloc_trace) },
-	{ 0xf69ef392, __VMLINUX_SYMBOL_STR(kmalloc_caches) },
+	{ 0xf3ce89fc, __VMLINUX_SYMBOL_STR(remap_pfn_range) },
+	{ 0x6aaa1afc, __VMLINUX_SYMBOL_STR(kmem_cache_alloc_trace) },
+	{ 0x4ac4f2b5, __VMLINUX_SYMBOL_STR(kmalloc_caches) },
 	{ 0xc6cbbc89, __VMLINUX_SYMBOL_STR(capable) },
 	{ 0x37a0cba, __VMLINUX_SYMBOL_STR(kfree) },
 	{ 0xf087137d, __VMLINUX_SYMBOL_STR(__dynamic_pr_debug) },
-	{ 0xd2a87434, __VMLINUX_SYMBOL_STR(dma_ops) },
-	{ 0x95cfb5b3, __VMLINUX_SYMBOL_STR(dma_release_from_coherent) },
+	{ 0x7276dd23, __VMLINUX_SYMBOL_STR(dma_ops) },
+	{ 0x6b0f29ec, __VMLINUX_SYMBOL_STR(dma_release_from_coherent) },
 };
 
 static const char __module_depends[]
