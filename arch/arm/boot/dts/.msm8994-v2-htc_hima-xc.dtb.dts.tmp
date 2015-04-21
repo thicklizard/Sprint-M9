@@ -38,7 +38,7 @@
  interrupt-parent = <&intc>;
 
  chosen {
-  bootargs = "boot_cpus=0,1,2,3 sched_enable_hmp=1 sched_enable_power_aware=1 maxcpus=5 androidboot.rpmdevice=fc190000.qcom,rpm-stats-ver";
+  bootargs = "boot_cpus=0,1,2,3,4,5 sched_enable_hmp=1 sched_enable_power_aware=1 maxcpus=6 androidboot.rpmdevice=fc190000.qcom,rpm-stats-ver";
  };
 
  aliases {
