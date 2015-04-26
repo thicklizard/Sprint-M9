@@ -79,7 +79,7 @@
 	.global	main
 	.type	main, %function
 main:
-.LFB1468:
+.LFB1472:
 	.file 1 "arch/arm64/kernel/asm-offsets.c"
 	.loc 1 34 0
 	.cfi_startproc
@@ -529,7 +529,7 @@ main:
 	mov	w0, 0	//,
 	ret
 	.cfi_endproc
-.LFE1468:
+.LFE1472:
 	.size	main, .-main
 	.text
 .Letext0:
@@ -696,8 +696,8 @@ main:
 	.byte	0x1
 	.byte	0x21
 	.4byte	0x45
-	.8byte	.LFB1468
-	.8byte	.LFE1468-.LFB1468
+	.8byte	.LFB1472
+	.8byte	.LFE1472-.LFB1472
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x7
@@ -1195,14 +1195,14 @@ main:
 	.byte	0
 	.2byte	0
 	.2byte	0
-	.8byte	.LFB1468
-	.8byte	.LFE1468-.LFB1468
+	.8byte	.LFB1472
+	.8byte	.LFE1472-.LFB1472
 	.8byte	0
 	.8byte	0
 	.section	.debug_ranges,"",%progbits
 .Ldebug_ranges0:
-	.8byte	.LFB1468
-	.8byte	.LFE1468
+	.8byte	.LFB1472
+	.8byte	.LFE1472
 	.8byte	0
 	.8byte	0
 	.section	.debug_line,"",%progbits
