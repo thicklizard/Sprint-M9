@@ -725,6 +725,7 @@ deps_drivers/video/msm/mdss/mdss_mdp_pp.o := \
   include/linux/msm-bus-board.h \
   include/dt-bindings/msm/msm-bus-ids.h \
     $(wildcard include/config/noc.h) \
+  drivers/video/msm/mdss/mdss_mdp_kcal_ctrl.h \
 
 drivers/video/msm/mdss/mdss_mdp_pp.o: $(deps_drivers/video/msm/mdss/mdss_mdp_pp.o)
 
