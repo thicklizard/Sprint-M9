@@ -350,10 +350,10 @@ CC		= $(srctree)/scripts/gcc-wrapper.py $(REAL_CC)
 
 CHECKFLAGS     := -D__linux__ -Dlinux -D__STDC__ -Dunix -D__unix__ \
 		  -Wbitwise -Wno-return-void $(CF)
-CFLAGS_MODULE   = -fgcse-sm -fgcse-las -fsched-spec-load -fforce-addr -ffast-math -fsingle-precision-constant -ftree-vectorize -ftree-loop-im -ftree-loop-ivcanon -fivopts -fgraphite -floop-flatten -floop-parallelize-all -ftree-loop-linear -floop-interchange -floop-strip-mine -floop-block -floop-nest-optimize -frename-registers
+CFLAGS_MODULE   = -mcpu=cortex-a53 -march=armv8-a -fgcse-sm -fgcse-las -fsched-spec-load -fforce-addr -ffast-math -fsingle-precision-constant -ftree-vectorize -ftree-loop-im -ftree-loop-ivcanon -fivopts -fgraphite -floop-flatten -floop-parallelize-all -ftree-loop-linear -floop-interchange -floop-strip-mine -floop-block -floop-nest-optimize -frename-registers
 AFLAGS_MODULE   =
 LDFLAGS_MODULE  =
-CFLAGS_KERNEL	=  -fgcse-sm -fgcse-las -fsched-spec-load -fforce-addr -ffast-math -fsingle-precision-constant -ftree-vectorize -ftree-loop-im -ftree-loop-ivcanon -fivopts -fgraphite -floop-flatten -floop-parallelize-all -ftree-loop-linear -floop-interchange -floop-strip-mine -floop-block -floop-nest-optimize -frename-registers
+CFLAGS_KERNEL	= -mcpu=cortex-a53 -march=armv8-a -fgcse-sm -fgcse-las -fsched-spec-load -fforce-addr -ffast-math -fsingle-precision-constant -ftree-vectorize -ftree-loop-im -ftree-loop-ivcanon -fivopts -fgraphite -floop-flatten -floop-parallelize-all -ftree-loop-linear -floop-interchange -floop-strip-mine -floop-block -floop-nest-optimize -frename-registers
 AFLAGS_KERNEL	=
 CFLAGS_GCOV	= -fprofile-arcs -ftest-coverage
 

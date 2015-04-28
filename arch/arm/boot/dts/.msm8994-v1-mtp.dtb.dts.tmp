@@ -900,11 +900,11 @@
   qcom,platform-bist-ctrl = [00 00 b1 ff 00 00];
   qcom,platform-regulator-settings = [03 03 03 00 20 07 01];
   qcom,platform-lane-config = [
-   02 a0 00 00 20 00 00 01 46
-   02 a0 00 00 40 00 00 01 46
-   02 a0 00 40 20 00 00 01 46
-   02 a0 00 40 00 00 00 01 46
-   00 a0 00 80 00 00 00 01 46];
+   02 00 00 00 20 00 00 01 88
+   02 00 00 00 40 00 00 01 88
+   02 00 00 40 20 00 00 01 88
+   02 00 00 40 00 00 00 01 88
+   00 00 00 80 00 00 00 01 88];
 
   qcom,mmss-ulp-clamp-ctrl-offset = <0x14>;
   qcom,mmss-phyreset-ctrl-offset = <0x108>;
@@ -1016,11 +1016,11 @@
   qcom,platform-bist-ctrl = [00 00 b1 ff 00 00];
   qcom,platform-regulator-settings = [03 03 03 00 20 07 01];
   qcom,platform-lane-config = [
-   02 a0 00 00 20 00 00 01 46
-   02 a0 00 00 40 00 00 01 46
-   02 a0 00 40 20 00 00 01 46
-   02 a0 00 40 00 00 00 01 46
-   00 a0 00 80 00 00 00 01 46];
+   02 00 00 00 20 00 00 01 88
+   02 00 00 00 40 00 00 01 88
+   02 00 00 40 20 00 00 01 88
+   02 00 00 40 00 00 00 01 88
+   00 00 00 80 00 00 00 01 88];
 
   qcom,mmss-ulp-clamp-ctrl-offset = <0x14>;
   qcom,mmss-phyreset-ctrl-offset = <0x108>;
@@ -7315,6 +7315,14 @@
   pmi8994_revid: qcom,revid@100 {
    compatible = "qcom,qpnp-revid";
    reg = <0x100 0x100>;
+  };
+
+  qcom,power-on@800 {
+   compatible = "qcom,qpnp-power-on";
+   reg = <0x800 0x100>;
+   qcom,secondary-pon-reset;
+   qcom,s3-debounce = <32>;
+   qcom,s3-src = "kpdpwr-and-resin";
   };
 
   pmi8994_gpios: gpios {
