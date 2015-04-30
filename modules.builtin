@@ -324,6 +324,7 @@ kernel/drivers/usb/host/ehci-hcd.ko
 kernel/drivers/usb/host/ehci-pci.ko
 kernel/drivers/usb/host/xhci-hcd.ko
 kernel/drivers/usb/misc/ehset.ko
+kernel/drivers/usb/misc/trancevibrator.ko
 kernel/drivers/usb/mon/usbmon.ko
 kernel/drivers/usb/phy/phy-msm-hsusb.ko
 kernel/drivers/usb/phy/phy-msm-ssusb.ko

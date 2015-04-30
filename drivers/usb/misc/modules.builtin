@@ -1,1 +1,2 @@
 kernel/drivers/usb/misc/ehset.ko
+kernel/drivers/usb/misc/trancevibrator.ko
