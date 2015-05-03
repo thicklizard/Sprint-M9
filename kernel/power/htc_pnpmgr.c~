@@ -759,13 +759,18 @@ power_attr(user_cpunum_min);
 define_cluster_info_show(max_freq_info);
 power_ro_attr(max_freq_info);
 
-define_cluster_info_show(min_freq_info);
-power_ro_attr(min_freq_info);
+define_cluster_info_show(min_freq);
+power_ro_attr(min_freq);
 
 static inline void scaling_freq_verify(struct cpufreq_policy *policy)
 {
-	cpufreq_verify_within_limits(policy, policy->cpuinfo.min_freq,
-			policy->cpuinfo.max_freq);
+	struct cpufreq_policy user_policy;
+
+	user_policy.max = user_policy.max;
+	user_policy.min = user_policy.min;
+
+	cpufreq_verify_within_limits(policy, policy->user_policy.min_freq,
+			policy->user_policy.max_freq);
 }
 
 static ssize_t

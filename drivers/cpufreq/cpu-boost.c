@@ -221,11 +221,15 @@ static void do_input_boost_rem(struct work_struct *work)
 	unsigned int i, ret;
 	struct cpu_sync *i_sync_info;
 
+	if (sched_boost_active) {
+		sched_set_boost(0);
+		sched_boost_active = false;
+	}
 	
 	pr_debug("Resetting input boost min for all CPUs\n");
 	for_each_possible_cpu(i) {
 		i_sync_info = &per_cpu(sync_info, i);
-		i_sync_info->input_boost_min = 0;
+		i_sync_info->input_boost_min = i_sync_info->input_boost_freq;
 	}
 
 	
@@ -233,10 +237,10 @@ static void do_input_boost_rem(struct work_struct *work)
 
 	mutex_lock(&input_boost_lock);
 	if (sched_boost_active) {
-		ret = sched_set_boost(0);
+		ret = sched_set_boost(1);
 		if (ret)
 			pr_err("cpu-boost: HMP boost disable failed\n");
-		sched_boost_active = false;
+		sched_boost_active = true;
 	}
 	mutex_unlock(&input_boost_lock);
 }
