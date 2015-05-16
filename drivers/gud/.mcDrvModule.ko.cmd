@@ -1,1 +1,1 @@
-cmd_drivers/gud/mcDrvModule.ko := /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ld -EL -r  -T /home/thicklizard/m9_kernel/scripts/module-common.lds --build-id  -o drivers/gud/mcDrvModule.ko drivers/gud/mcDrvModule.o drivers/gud/mcDrvModule.mod.o
+cmd_drivers/gud/mcDrvModule.ko := /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL -r  -T /home/thicklizard/m9_kernel/scripts/module-common.lds --build-id  -o drivers/gud/mcDrvModule.ko drivers/gud/mcDrvModule.o drivers/gud/mcDrvModule.mod.o

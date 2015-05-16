@@ -1,1 +1,1 @@
-cmd_drivers/media/radio/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ld -EL    -r -o drivers/media/radio/built-in.o drivers/media/radio/silabs/built-in.o 
+cmd_drivers/media/radio/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o drivers/media/radio/built-in.o drivers/media/radio/silabs/built-in.o 

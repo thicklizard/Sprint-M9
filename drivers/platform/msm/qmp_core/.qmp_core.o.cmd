@@ -1,1 +1,1 @@
-cmd_drivers/platform/msm/qmp_core/qmp_core.o := /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ld -EL    -r -o drivers/platform/msm/qmp_core/qmp_core.o drivers/platform/msm/qmp_core/qmp_sphinx_logk.o drivers/platform/msm/qmp_core/qmp_sphinx_ringbuf.o 
+cmd_drivers/platform/msm/qmp_core/qmp_core.o := /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o drivers/platform/msm/qmp_core/qmp_core.o drivers/platform/msm/qmp_core/qmp_sphinx_logk.o drivers/platform/msm/qmp_core/qmp_sphinx_ringbuf.o 

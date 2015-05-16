@@ -1,4 +1,4 @@
-cmd_drivers/gpu/msm/kgsl_iommu.o := /home/thicklizard/m9_kernel/scripts/gcc-wrapper.py /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-gcc -Wp,-MD,drivers/gpu/msm/.kgsl_iommu.o.d  -nostdinc -isystem /home/thicklizard/android-toolchain-eabioptimized7/bin/../lib/gcc/aarch64-linux-gnu/4.8.3/include -I/home/thicklizard/m9_kernel/arch/arm64/include -Iarch/arm64/include/generated  -Iinclude -I/home/thicklizard/m9_kernel/arch/arm64/include/uapi -Iarch/arm64/include/generated/uapi -I/home/thicklizard/m9_kernel/include/uapi -Iinclude/generated/uapi -include /home/thicklizard/m9_kernel/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -mgeneral-regs-only -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -femit-struct-debug-baseonly -fno-var-tracking -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO -Iinclude/uapi/drm -Iinclude/drm -Idrivers/gpu/msm   -fgcse-sm -fgcse-las -fsched-spec-load -fforce-addr -ffast-math -fsingle-precision-constant -ftree-vectorize -ftree-loop-im -ftree-loop-ivcanon -fivopts -fgraphite -floop-flatten -floop-parallelize-all -ftree-loop-linear -floop-interchange -floop-strip-mine -floop-block -floop-nest-optimize -frename-registers -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(kgsl_iommu)"  -D"KBUILD_MODNAME=KBUILD_STR(msm_kgsl_core)" -c -o drivers/gpu/msm/.tmp_kgsl_iommu.o drivers/gpu/msm/kgsl_iommu.c
+cmd_drivers/gpu/msm/kgsl_iommu.o := /home/thicklizard/m9_kernel/scripts/gcc-wrapper.py /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-gcc -Wp,-MD,drivers/gpu/msm/.kgsl_iommu.o.d  -nostdinc -isystem /home/thicklizard/android-toolchain-eabioptimized8/bin/../lib/gcc/aarch64_be-linux-gnu/4.8.3/include -I/home/thicklizard/m9_kernel/arch/arm64/include -Iarch/arm64/include/generated  -Iinclude -I/home/thicklizard/m9_kernel/arch/arm64/include/uapi -Iarch/arm64/include/generated/uapi -I/home/thicklizard/m9_kernel/include/uapi -Iinclude/generated/uapi -include /home/thicklizard/m9_kernel/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -mgeneral-regs-only -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -femit-struct-debug-baseonly -fno-var-tracking -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO -Iinclude/uapi/drm -Iinclude/drm -Idrivers/gpu/msm   -fgcse-sm -fgcse-las -fsched-spec-load -fforce-addr -ffast-math -fsingle-precision-constant -ftree-vectorize -ftree-loop-im -ftree-loop-ivcanon -fivopts -fgraphite -floop-flatten -floop-parallelize-all -ftree-loop-linear -floop-interchange -floop-strip-mine -floop-block -floop-nest-optimize -frename-registers -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(kgsl_iommu)"  -D"KBUILD_MODNAME=KBUILD_STR(msm_kgsl_core)" -c -o drivers/gpu/msm/.tmp_kgsl_iommu.o drivers/gpu/msm/kgsl_iommu.c
 
 source_drivers/gpu/msm/kgsl_iommu.o := drivers/gpu/msm/kgsl_iommu.c
 
@@ -43,7 +43,7 @@ deps_drivers/gpu/msm/kgsl_iommu.o := \
     $(wildcard include/config/ring/buffer.h) \
     $(wildcard include/config/tracing.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
-  /home/thicklizard/android-toolchain-eabioptimized7/lib/gcc/aarch64-linux-gnu/4.8.3/include/stdarg.h \
+  /home/thicklizard/android-toolchain-eabioptimized8/lib/gcc/aarch64_be-linux-gnu/4.8.3/include/stdarg.h \
   include/linux/linkage.h \
   include/linux/stringify.h \
   include/linux/export.h \
@@ -511,7 +511,7 @@ deps_drivers/gpu/msm/kgsl_iommu.o := \
   include/uapi/asm-generic/ioctl.h \
   include/linux/../../drivers/staging/android/ion/msm/../../uapi/msm_ion.h \
   include/linux/../../drivers/staging/android/ion/msm/../../uapi/ion.h \
-  /home/thicklizard/android-toolchain-eabioptimized7/lib/gcc/aarch64-linux-gnu/4.8.3/include/stddef.h \
+  /home/thicklizard/android-toolchain-eabioptimized8/lib/gcc/aarch64_be-linux-gnu/4.8.3/include/stddef.h \
   drivers/gpu/msm/kgsl.h \
   include/linux/vmalloc.h \
     $(wildcard include/config/enable/vmalloc/saving.h) \

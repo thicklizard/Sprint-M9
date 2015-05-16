@@ -221,10 +221,6 @@ static void do_input_boost_rem(struct work_struct *work)
 	unsigned int i, ret;
 	struct cpu_sync *i_sync_info;
 
-	if (sched_boost_active) {
-		sched_set_boost(0);
-		sched_boost_active = false;
-	}
 	
 	pr_debug("Resetting input boost min for all CPUs\n");
 	for_each_possible_cpu(i) {
@@ -237,10 +233,10 @@ static void do_input_boost_rem(struct work_struct *work)
 
 	mutex_lock(&input_boost_lock);
 	if (sched_boost_active) {
-		ret = sched_set_boost(1);
+		ret = sched_set_boost(0);
 		if (ret)
 			pr_err("cpu-boost: HMP boost disable failed\n");
-		sched_boost_active = true;
+		sched_boost_active = false;
 	}
 	mutex_unlock(&input_boost_lock);
 }
@@ -273,9 +269,6 @@ static int boost_mig_sync_thread(void *data)
 
 		ret = cpufreq_get_policy(&dest_policy, dest_cpu);
 		if (ret)
-			continue;
-
-		if (s->task_load < migration_load_threshold)
 			continue;
 
 		req_freq = load_based_syncs ?
@@ -340,7 +333,7 @@ static int boost_migration_notify(struct notifier_block *nb,
 	spin_lock_irqsave(&s->lock, flags);
 	s->pending = true;
 	s->src_cpu = mnd->src_cpu;
-	s->task_load = mnd->load;
+	s->task_load = load_based_syncs ? mnd->load : 0;
 	spin_unlock_irqrestore(&s->lock, flags);
 	wake_up(&s->sync_wq);
 

@@ -1,1 +1,1 @@
-cmd_drivers/slimbus/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ld -EL    -r -o drivers/slimbus/built-in.o drivers/slimbus/slimbus.o drivers/slimbus/slim-msm.o drivers/slimbus/slim-msm-ngd.o 
+cmd_drivers/slimbus/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o drivers/slimbus/built-in.o drivers/slimbus/slimbus.o drivers/slimbus/slim-msm.o drivers/slimbus/slim-msm-ngd.o 

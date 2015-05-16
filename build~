@@ -88,7 +88,8 @@ echo "[BUILD]: Start of build: $DATE...";
 
 #build the kernel
 echo "[BUILD]: Bulding the kernel...";
-make -j12 ARCH=arm64 SUBARCH=arm64 CROSS_COMPILE=/home/thicklizard/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+make -j12 ARCH=arm64 SUBARCH=arm64 CROSS_COMPILE=/home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-
+
 
 
 echo "[BUILD]: Done!...";

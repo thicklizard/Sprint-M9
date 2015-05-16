@@ -1,1 +1,1 @@
-cmd_sound/core/snd-compress.o := /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ld -EL    -r -o sound/core/snd-compress.o sound/core/compress_offload.o 
+cmd_sound/core/snd-compress.o := /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o sound/core/snd-compress.o sound/core/compress_offload.o 

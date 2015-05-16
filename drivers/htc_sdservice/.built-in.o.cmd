@@ -1,1 +1,1 @@
-cmd_drivers/htc_sdservice/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ld -EL    -r -o drivers/htc_sdservice/built-in.o drivers/htc_sdservice/htc_sdservice.o 
+cmd_drivers/htc_sdservice/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o drivers/htc_sdservice/built-in.o drivers/htc_sdservice/htc_sdservice.o 

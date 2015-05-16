@@ -1,1 +1,1 @@
-cmd_drivers/media/platform/msm/broadcast/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ld -EL    -r -o drivers/media/platform/msm/broadcast/built-in.o drivers/media/platform/msm/broadcast/tspp.o 
+cmd_drivers/media/platform/msm/broadcast/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o drivers/media/platform/msm/broadcast/built-in.o drivers/media/platform/msm/broadcast/tspp.o 

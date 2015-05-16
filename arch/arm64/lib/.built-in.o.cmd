@@ -1,1 +1,1 @@
-cmd_arch/arm64/lib/built-in.o :=  rm -f arch/arm64/lib/built-in.o; /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ar rcsD arch/arm64/lib/built-in.o
+cmd_arch/arm64/lib/built-in.o :=  rm -f arch/arm64/lib/built-in.o; /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ar rcsD arch/arm64/lib/built-in.o

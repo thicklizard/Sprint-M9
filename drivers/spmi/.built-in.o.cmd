@@ -1,1 +1,1 @@
-cmd_drivers/spmi/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ld -EL    -r -o drivers/spmi/built-in.o drivers/spmi/spmi.o drivers/spmi/spmi-resources.o drivers/spmi/spmi-pmic-arb.o drivers/spmi/qpnp-int.o drivers/spmi/spmi-dbgfs.o 
+cmd_drivers/spmi/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o drivers/spmi/built-in.o drivers/spmi/spmi.o drivers/spmi/spmi-resources.o drivers/spmi/spmi-pmic-arb.o drivers/spmi/qpnp-int.o drivers/spmi/spmi-dbgfs.o 

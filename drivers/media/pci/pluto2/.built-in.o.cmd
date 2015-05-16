@@ -1,1 +1,1 @@
-cmd_drivers/media/pci/pluto2/built-in.o :=  rm -f drivers/media/pci/pluto2/built-in.o; /home/thicklizard/android-toolchain-eabioptimized7/bin/aarch64-linux-gnu-ar rcsD drivers/media/pci/pluto2/built-in.o
+cmd_drivers/media/pci/pluto2/built-in.o :=  rm -f drivers/media/pci/pluto2/built-in.o; /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ar rcsD drivers/media/pci/pluto2/built-in.o

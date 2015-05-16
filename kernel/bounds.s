@@ -1,6 +1,6 @@
 	.cpu cortex-a53+fp+simd
 	.file	"bounds.c"
-// GNU C (crosstool-NG linaro-1.13.1-4.8-2014.04 - Linaro GCC 4.8-2014.04) version 4.8.3 20140401 (prerelease) (aarch64-linux-gnu)
+// GNU C (crosstool-NG linaro-1.13.1-4.8-2014.04 - Linaro GCC 4.8-2014.04) version 4.8.3 20140401 (prerelease) (aarch64_be-linux-gnu)
 //	compiled by GNU C version 4.1.3 20080704 (prerelease) (Ubuntu 4.1.2-27ubuntu1), GMP version 5.0.2, MPFR version 3.1.0, MPC version 0.9
 // GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 // options passed:  -nostdinc
@@ -9,13 +9,13 @@
 // -I /home/thicklizard/m9_kernel/arch/arm64/include/uapi
 // -I arch/arm64/include/generated/uapi
 // -I /home/thicklizard/m9_kernel/include/uapi -I include/generated/uapi
-// -imultiarch aarch64-linux-gnu
-// -iprefix /home/thicklizard/android-toolchain-eabioptimized7/bin/../lib/gcc/aarch64-linux-gnu/4.8.3/
-// -isysroot /home/thicklizard/android-toolchain-eabioptimized7/bin/../aarch64-linux-gnu/libc
+// -imultiarch aarch64_be-linux-gnu
+// -iprefix /home/thicklizard/android-toolchain-eabioptimized8/bin/../lib/gcc/aarch64_be-linux-gnu/4.8.3/
+// -isysroot /home/thicklizard/android-toolchain-eabioptimized8/bin/../aarch64_be-linux-gnu/libc
 // -D __KERNEL__ -D CC_HAVE_ASM_GOTO -D KBUILD_STR(s)=#s
 // -D KBUILD_BASENAME=KBUILD_STR(bounds)
 // -D KBUILD_MODNAME=KBUILD_STR(bounds)
-// -isystem /home/thicklizard/android-toolchain-eabioptimized7/bin/../lib/gcc/aarch64-linux-gnu/4.8.3/include
+// -isystem /home/thicklizard/android-toolchain-eabioptimized8/bin/../lib/gcc/aarch64_be-linux-gnu/4.8.3/include
 // -include /home/thicklizard/m9_kernel/include/linux/kconfig.h
 // -MD kernel/.bounds.s.d kernel/bounds.c -mlittle-endian
 // -mgeneral-regs-only -auxbase-strip kernel/bounds.s -g -O2 -Wall -Wundef
