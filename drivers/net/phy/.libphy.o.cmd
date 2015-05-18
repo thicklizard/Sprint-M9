@@ -1,1 +1,0 @@
-cmd_drivers/net/phy/libphy.o := /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o drivers/net/phy/libphy.o drivers/net/phy/phy.o drivers/net/phy/phy_device.o drivers/net/phy/mdio_bus.o 

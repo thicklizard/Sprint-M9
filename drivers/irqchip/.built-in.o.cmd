@@ -1,1 +1,0 @@
-cmd_drivers/irqchip/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o drivers/irqchip/built-in.o drivers/irqchip/irqchip.o drivers/irqchip/irq-gic.o drivers/irqchip/irq-msm.o drivers/irqchip/msm_show_resume_irq.o 

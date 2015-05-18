@@ -1,1 +1,0 @@
-cmd_net/bluetooth/bnep/bnep.o := /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o net/bluetooth/bnep/bnep.o net/bluetooth/bnep/core.o net/bluetooth/bnep/sock.o net/bluetooth/bnep/netdev.o 

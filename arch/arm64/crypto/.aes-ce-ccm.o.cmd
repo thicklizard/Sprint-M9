@@ -1,1 +1,0 @@
-cmd_arch/arm64/crypto/aes-ce-ccm.o := /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o arch/arm64/crypto/aes-ce-ccm.o arch/arm64/crypto/aes-ce-ccm-glue.o arch/arm64/crypto/aes-ce-ccm-core.o 

@@ -1,1 +1,0 @@
-cmd_drivers/input/evbug.ko := /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL -r  -T /home/thicklizard/m9_kernel/scripts/module-common.lds --build-id  -o drivers/input/evbug.ko drivers/input/evbug.o drivers/input/evbug.mod.o

@@ -1,1 +1,0 @@
-cmd_drivers/net/ethernet/msm/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o drivers/net/ethernet/msm/built-in.o drivers/net/ethernet/msm/rndis_ipa.o 

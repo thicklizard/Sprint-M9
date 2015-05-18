@@ -1,1 +1,0 @@
-cmd_drivers/scsi/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o drivers/scsi/built-in.o drivers/scsi/scsi_mod.o drivers/scsi/scsi_tgt.o drivers/scsi/sd_mod.o drivers/scsi/sg.o drivers/scsi/ch.o 

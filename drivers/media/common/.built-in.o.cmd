@@ -1,1 +1,0 @@
-cmd_drivers/media/common/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o drivers/media/common/built-in.o drivers/media/common/b2c2/built-in.o drivers/media/common/saa7146/built-in.o drivers/media/common/siano/built-in.o 

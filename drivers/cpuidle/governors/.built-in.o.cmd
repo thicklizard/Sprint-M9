@@ -1,1 +1,0 @@
-cmd_drivers/cpuidle/governors/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o drivers/cpuidle/governors/built-in.o drivers/cpuidle/governors/ladder.o drivers/cpuidle/governors/menu.o 

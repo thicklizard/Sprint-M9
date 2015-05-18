@@ -1,6 +1,0 @@
-kernel/drivers/misc/qseecom.ko
-kernel/drivers/misc/compat_qseecom.ko
-kernel/drivers/misc/ti_drv2667.ko
-kernel/drivers/misc/eeprom/eeprom_93cx6.ko
-kernel/drivers/misc/headset/htc_headset_mgr.ko
-kernel/drivers/misc/headset/htc_headset_pmic.ko

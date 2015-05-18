@@ -1,1 +1,0 @@
-cmd_drivers/usb/storage/ums-cypress.o := /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o drivers/usb/storage/ums-cypress.o drivers/usb/storage/cypress_atacb.o 

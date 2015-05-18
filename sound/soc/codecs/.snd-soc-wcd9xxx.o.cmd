@@ -1,1 +1,0 @@
-cmd_sound/soc/codecs/snd-soc-wcd9xxx.o := /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o sound/soc/codecs/snd-soc-wcd9xxx.o sound/soc/codecs/wcd9xxx-resmgr.o sound/soc/codecs/wcd9xxx-mbhc.o sound/soc/codecs/wcd9xxx-common.o 

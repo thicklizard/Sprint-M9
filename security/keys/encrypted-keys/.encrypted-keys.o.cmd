@@ -1,1 +1,0 @@
-cmd_security/keys/encrypted-keys/encrypted-keys.o := /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o security/keys/encrypted-keys/encrypted-keys.o security/keys/encrypted-keys/encrypted.o security/keys/encrypted-keys/ecryptfs_format.o 

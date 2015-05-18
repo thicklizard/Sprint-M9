@@ -1,1 +1,0 @@
-cmd_drivers/input/misc/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o drivers/input/misc/built-in.o drivers/input/misc/dummy_keypad.o drivers/input/misc/uinput.o drivers/input/misc/hall_sensor.o drivers/input/misc/hall_sensor_notify.o 

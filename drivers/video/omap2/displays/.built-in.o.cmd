@@ -1,1 +1,0 @@
-cmd_drivers/video/omap2/displays/built-in.o :=  rm -f drivers/video/omap2/displays/built-in.o; /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ar rcsD drivers/video/omap2/displays/built-in.o

@@ -1,1 +1,0 @@
-cmd_drivers/gpio/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o drivers/gpio/built-in.o drivers/gpio/devres.o drivers/gpio/gpiolib.o drivers/gpio/gpiolib-of.o drivers/gpio/qpnp-pin.o drivers/gpio/gpio-msm-smp2p.o drivers/gpio/gpio-msm-smp2p-test.o 

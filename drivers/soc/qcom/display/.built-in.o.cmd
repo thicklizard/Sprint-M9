@@ -1,1 +1,0 @@
-cmd_drivers/soc/qcom/display/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o drivers/soc/qcom/display/built-in.o drivers/soc/qcom/display/htc_hima-panel.o 

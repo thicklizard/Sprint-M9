@@ -1,1 +1,0 @@
-cmd_drivers/media/tuners/tda18271.o := /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o drivers/media/tuners/tda18271.o drivers/media/tuners/tda18271-maps.o drivers/media/tuners/tda18271-common.o drivers/media/tuners/tda18271-fe.o 

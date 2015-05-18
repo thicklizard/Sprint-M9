@@ -1,1 +1,0 @@
-cmd_drivers/htc_ril/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o drivers/htc_ril/built-in.o drivers/htc_ril/htc_radio_smem.o drivers/htc_ril/htc_modem_notifier.o 

@@ -1,1 +1,0 @@
-cmd_drivers/gud/mcKernelApi.ko := /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL -r  -T /home/thicklizard/m9_kernel/scripts/module-common.lds --build-id  -o drivers/gud/mcKernelApi.ko drivers/gud/mcKernelApi.o drivers/gud/mcKernelApi.mod.o

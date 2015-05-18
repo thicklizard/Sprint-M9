@@ -1,1 +1,0 @@
-cmd_arch/arm64/kernel/vdso/vdso-offsets.h := 	/home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-nm arch/arm64/kernel/vdso/vdso.so.dbg | /home/thicklizard/m9_kernel/arch/arm64/kernel/vdso/gen_vdso_offsets.sh | LC_ALL=C sort > arch/arm64/kernel/vdso/vdso-offsets.h && cp arch/arm64/kernel/vdso/vdso-offsets.h include/generated/

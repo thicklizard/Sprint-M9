@@ -1,1 +1,0 @@
-cmd_arch/arm64/crypto/aes-neon-blk.o := /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o arch/arm64/crypto/aes-neon-blk.o arch/arm64/crypto/aes-glue-neon.o arch/arm64/crypto/aes-neon.o 

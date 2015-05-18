@@ -1,1 +1,0 @@
-cmd_drivers/platform/msm/qmp_core/built-in.o :=  /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o drivers/platform/msm/qmp_core/built-in.o drivers/platform/msm/qmp_core/qmp_core.o 

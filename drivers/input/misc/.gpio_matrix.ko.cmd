@@ -1,1 +1,0 @@
-cmd_drivers/input/misc/gpio_matrix.ko := /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL -r  -T /home/thicklizard/m9_kernel/scripts/module-common.lds --build-id  -o drivers/input/misc/gpio_matrix.ko drivers/input/misc/gpio_matrix.o drivers/input/misc/gpio_matrix.mod.o

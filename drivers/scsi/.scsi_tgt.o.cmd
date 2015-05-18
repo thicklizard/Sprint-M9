@@ -1,1 +1,0 @@
-cmd_drivers/scsi/scsi_tgt.o := /home/thicklizard/android-toolchain-eabioptimized8/bin/aarch64_be-linux-gnu-ld -EL    -r -o drivers/scsi/scsi_tgt.o drivers/scsi/scsi_tgt_lib.o drivers/scsi/scsi_tgt_if.o 
